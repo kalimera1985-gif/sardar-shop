@@ -1,0 +1,55 @@
+{
+  "_comment": "Главные настройки магазина. Поменяйте значения и сохраните — сайт пересоберётся сам (GitHub Actions) или командой: python build.py",
+
+  "store_name": "SARDAR",
+  "store_title": "SARDAR — одежда со склада в Астане",
+  "tagline": "Новая одежда со склада в Астане по сниженным ценам. Доставка СДЭК по Астане, Косшы и пригороду.",
+  "site_url": "https://USERNAME.github.io/sardar-shop",
+  "language": "ru",
+
+  "whatsapp": "77075061928",
+  "phone_display": "+7 707 506 19 28",
+  "telegram": "",
+  "instagram": "",
+  "email": "",
+  "work_hours": "Ежедневно с 9:00 до 21:00",
+
+  "seller": {
+    "legal_name": "ИП «SARDAR»",
+    "owner": "Табариков Р. М.",
+    "bin": "",
+    "city": "Астана",
+    "address": "г. Астана, Есильский район"
+  },
+
+  "currency": "KZT",
+
+  "delivery": {
+    "_comment": "Доставка оплачивается покупателем отдельно по тарифу СДЭК (price: null). Если захотите фиксированную цену для района — впишите число, например 1000. free_from: 0 = бесплатной доставки нет.",
+    "carrier": "СДЭК",
+    "free_from": 0,
+    "zones": [
+      { "id": "astana",     "name": "Астана",          "price": null, "eta": "1–2 дня" },
+      { "id": "kosshy",     "name": "Косшы",           "price": null, "eta": "1–2 дня" },
+      { "id": "talapker",   "name": "Талапкер",        "price": null, "eta": "1–3 дня" },
+      { "id": "koyandy",    "name": "Коянды",          "price": null, "eta": "1–3 дня" },
+      { "id": "taitobe",    "name": "Тайтобе",         "price": null, "eta": "1–3 дня" },
+      { "id": "zhibek",     "name": "Жибек Жолы",      "price": null, "eta": "1–3 дня" },
+      { "id": "karaotkel",  "name": "Караоткель",      "price": null, "eta": "1–3 дня" },
+      { "id": "akmol",      "name": "Акмол",           "price": null, "eta": "1–3 дня" },
+      { "id": "kz",         "name": "Другой город Казахстана", "price": null, "eta": "2–7 дней" }
+    ],
+    "pickup": { "enabled": false, "address": "", "hours": "" }
+  },
+
+  "payment_methods": [
+    "Kaspi перевод или Kaspi QR после подтверждения заказа",
+    "Оплата при получении (наложенный платёж СДЭК)"
+  ],
+
+  "returns_days": 14,
+  "wholesale_note": "Берёте от 10 штук одной модели? Сделаем оптовую цену — напишите нам в WhatsApp.",
+
+  "order_webhook": "",
+  "_order_webhook_comment": "URL веб-приложения из Google Таблицы учёта (заканчивается на /exec). Тогда каждый заказ записывается в таблицу, а сайт показывает живые остатки. Инструкция: README.md → «Учёт продаж в Google Таблице»"
+}

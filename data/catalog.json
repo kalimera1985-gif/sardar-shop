@@ -1,0 +1,5514 @@
+{
+ "_comment": "Каталог товаров. Можно править цены (price), старую цену (old_price), описание, материал. Остатки по размерам — в variants[].sizes. После правки сайт пересобирается автоматически (GitHub Actions) или командой python build.py",
+ "products": [
+  {
+   "id": "SD001",
+   "slug": "futbolka-polo-muzhskoe-s-korotkim-rukavom-s-printom",
+   "name": "Футболка поло мужское, с коротким рукавом, с принтом",
+   "category": "tshirts",
+   "gender": "men",
+   "price": 1360,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "С принтом",
+    "Короткий рукав"
+   ],
+   "description": "",
+   "image": "65b87c142c",
+   "variants": [
+    {
+     "color": "Бирюзовый",
+     "img": "65b87c142c",
+     "sizes": {
+      "L": 34
+     },
+     "sku": "SD001-01"
+    }
+   ]
+  },
+  {
+   "id": "SD002",
+   "slug": "pizhama-zhenskaya-hlopok",
+   "name": "Пижама женская, хлопок",
+   "category": "home",
+   "gender": "women",
+   "price": 1440,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "ebc07e3859",
+   "variants": [
+    {
+     "color": "Желтый",
+     "img": "18586b3576",
+     "sizes": {
+      "M": 41,
+      "L": 4,
+      "XL": 28,
+      "XXL": 23
+     },
+     "sku": "SD002-01"
+    },
+    {
+     "color": "Манго",
+     "img": "ebc07e3859",
+     "sizes": {
+      "L": 1,
+      "XL": 32
+     },
+     "sku": "SD002-02"
+    },
+    {
+     "color": "Оранжевый",
+     "img": "a890a79e36",
+     "sizes": {
+      "L": 31
+     },
+     "sku": "SD002-03"
+    }
+   ]
+  },
+  {
+   "id": "SD003",
+   "slug": "shapka-muzhskaya-uteplennaya-shapka-bini",
+   "name": "Шапка мужская утепленная, шапка бини",
+   "category": "hats",
+   "gender": "men",
+   "price": 380,
+   "old_price": null,
+   "material": "",
+   "season": "Осень / зима",
+   "features": [
+    "Утеплённая модель"
+   ],
+   "description": "",
+   "image": "75994356ec",
+   "variants": [
+    {
+     "color": "Бежевый",
+     "img": "75994356ec",
+     "sizes": {
+      "ONE": 101
+     },
+     "sku": "SD003-01"
+    },
+    {
+     "color": "Красный",
+     "img": "e8baead85c",
+     "sizes": {
+      "ONE": 117
+     },
+     "sku": "SD003-02"
+    },
+    {
+     "color": "Бордовый",
+     "img": "eec193a0ef",
+     "sizes": {
+      "ONE": 18
+     },
+     "sku": "SD003-03"
+    },
+    {
+     "color": "Черный",
+     "img": "affa386d51",
+     "sizes": {
+      "ONE": 43
+     },
+     "sku": "SD003-04"
+    },
+    {
+     "color": "Горчичный",
+     "img": "c258474b86",
+     "sizes": {
+      "ONE": 52
+     },
+     "sku": "SD003-05"
+    }
+   ]
+  },
+  {
+   "id": "SD004",
+   "slug": "tolstovka-s-kapyushonom-uniseks",
+   "name": "Толстовка с капюшоном, унисекс",
+   "category": "hoodies",
+   "gender": "unisex",
+   "price": 4480,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "С капюшоном"
+   ],
+   "description": "",
+   "image": "406f88488c",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "406f88488c",
+     "sizes": {
+      "S": 6,
+      "M": 2,
+      "L": 7,
+      "XL": 8,
+      "XXL": 3,
+      "XXXL": 9
+     },
+     "sku": "SD004-01"
+    }
+   ]
+  },
+  {
+   "id": "SD005",
+   "slug": "shapka-zhenskaya-vyazanaya-krasnaya",
+   "name": "Шапка женская, вязаная, красная",
+   "category": "hats",
+   "gender": "women",
+   "price": 1100,
+   "old_price": null,
+   "material": "вязаный трикотаж",
+   "season": "Осень / зима",
+   "features": [],
+   "description": "",
+   "image": "cb03297dbc",
+   "variants": [
+    {
+     "color": "Красный",
+     "img": "cb03297dbc",
+     "sizes": {
+      "ONE": 7
+     },
+     "sku": "SD005-01"
+    }
+   ]
+  },
+  {
+   "id": "SD006",
+   "slug": "tunika-zhenskaya-nochnaya-hlopok-elastan",
+   "name": "Туника женская, ночная, хлопок, эластан",
+   "category": "home",
+   "gender": "women",
+   "price": 1750,
+   "old_price": null,
+   "material": "хлопок, эластан",
+   "season": "Всесезонная",
+   "features": [
+    "Для сна"
+   ],
+   "description": "",
+   "image": "ad05ff3df6",
+   "variants": [
+    {
+     "color": "Лимонный",
+     "img": "7a416d4fec",
+     "sizes": {
+      "M": 2
+     },
+     "sku": "SD006-01"
+    },
+    {
+     "color": "Белый",
+     "img": "ad05ff3df6",
+     "sizes": {
+      "S": 21
+     },
+     "sku": "SD006-02"
+    }
+   ]
+  },
+  {
+   "id": "SD007",
+   "slug": "muzhskoe-polo-s-vorotnikom-stoykoy",
+   "name": "Мужское поло с воротником-стойкой",
+   "category": "tshirts",
+   "gender": "men",
+   "price": 2270,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Воротник-стойка"
+   ],
+   "description": "",
+   "image": "e166f00bd8",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "e166f00bd8",
+     "sizes": {
+      "XL": 48
+     },
+     "sku": "SD007-01"
+    },
+    {
+     "color": "Бордовый",
+     "img": "941f831830",
+     "sizes": {
+      "XL": 1
+     },
+     "sku": "SD007-02"
+    },
+    {
+     "color": "Бежевый",
+     "img": "4ca0549499",
+     "sizes": {
+      "S": 1,
+      "M": 2,
+      "L": 1
+     },
+     "sku": "SD007-03"
+    },
+    {
+     "color": "Голубой",
+     "img": "1dcef65763",
+     "sizes": {
+      "M": 1
+     },
+     "sku": "SD007-04"
+    },
+    {
+     "color": "Молочный",
+     "img": "202b5e6b62",
+     "sizes": {
+      "XL": 1
+     },
+     "sku": "SD007-05"
+    }
+   ]
+  },
+  {
+   "id": "SD008",
+   "slug": "plate-zhenskoe-v-polosku-maksi-letnee",
+   "name": "Платье женское в полоску, макси, летнее",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1180,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Летняя модель",
+    "В полоску",
+    "Длина макси"
+   ],
+   "description": "",
+   "image": "fb56b3579b",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "fb56b3579b",
+     "sizes": {
+      "S": 30,
+      "M": 71,
+      "L": 40
+     },
+     "sku": "SD008-01"
+    }
+   ]
+  },
+  {
+   "id": "SD009",
+   "slug": "beysbolka-s-setkoy-kepka-s-plastikovym-fiksatorom",
+   "name": "Бейсболка с сеткой, кепка с пластиковым фиксатором",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 2450,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Сетка для вентиляции"
+   ],
+   "description": "",
+   "image": "72f0dc37f0",
+   "variants": [
+    {
+     "color": "Синий",
+     "img": "0fc51e8286",
+     "sizes": {
+      "ONE": 16
+     },
+     "sku": "SD009-01"
+    }
+   ]
+  },
+  {
+   "id": "SD010",
+   "slug": "zhenskoe-bodi",
+   "name": "Женское боди",
+   "category": "tops",
+   "gender": "women",
+   "price": 2120,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "7381a72ad6",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "679fff11b0",
+     "sizes": {
+      "L": 22
+     },
+     "sku": "SD010-01"
+    }
+   ]
+  },
+  {
+   "id": "SD011",
+   "slug": "bryuki-domashnie-zhenskie",
+   "name": "Брюки домашние, женские",
+   "category": "home",
+   "gender": "women",
+   "price": 1490,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Для дома и отдыха"
+   ],
+   "description": "",
+   "image": "ae2dac3030",
+   "variants": [
+    {
+     "color": "Бирюзовый",
+     "img": "419864645c",
+     "sizes": {
+      "S": 12,
+      "M": 14
+     },
+     "sku": "SD011-01"
+    },
+    {
+     "color": "Оливковый",
+     "img": "ae2dac3030",
+     "sizes": {
+      "S": 20
+     },
+     "sku": "SD011-02"
+    },
+    {
+     "color": "Лайм",
+     "img": "dcb2fb38fa",
+     "sizes": {
+      "S": 6
+     },
+     "sku": "SD011-03"
+    }
+   ]
+  },
+  {
+   "id": "SD012",
+   "slug": "mayka-zhenskaya-krasnaya",
+   "name": "Майка женская, красная",
+   "category": "tops",
+   "gender": "women",
+   "price": 590,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "bb71f4781f",
+   "variants": [
+    {
+     "color": "Красный",
+     "img": "bb71f4781f",
+     "sizes": {
+      "XS": 18,
+      "M": 17
+     },
+     "sku": "SD012-01"
+    }
+   ]
+  },
+  {
+   "id": "SD013",
+   "slug": "svitshot-s-zamkom-molniey-tostovka",
+   "name": "Свитшот с замком-молнией, тостовка",
+   "category": "hoodies",
+   "gender": "women",
+   "price": 2660,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "На молнии"
+   ],
+   "description": "",
+   "image": "9df4acb4ec",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "8e54a79d13",
+     "sizes": {
+      "XS": 50,
+      "S": 34,
+      "L": 1,
+      "XL": 3,
+      "XXXL": 29
+     },
+     "sku": "SD013-01"
+    }
+   ]
+  },
+  {
+   "id": "SD014",
+   "slug": "plate-zhenskoe-domashnyaya-sorochka-hlopok",
+   "name": "Платье женское, домашняя сорочка, хлопок",
+   "category": "home",
+   "gender": "women",
+   "price": 1440,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [
+    "Для дома и отдыха"
+   ],
+   "description": "",
+   "image": "8fb607811e",
+   "variants": [
+    {
+     "color": "Ледяной",
+     "img": "65acf8c05f",
+     "sizes": {
+      "XS": 1,
+      "S": 1,
+      "L": 11,
+      "XL": 4
+     },
+     "sku": "SD014-01"
+    },
+    {
+     "color": "Аметистовый",
+     "img": "8fb607811e",
+     "sizes": {
+      "XS": 20,
+      "S": 16,
+      "M": 1,
+      "L": 5
+     },
+     "sku": "SD014-02"
+    },
+    {
+     "color": "Небесно-голубой",
+     "img": "b9a57da730",
+     "sizes": {
+      "M": 36,
+      "L": 30
+     },
+     "sku": "SD014-03"
+    },
+    {
+     "color": "Синий",
+     "img": "d6708b4b27",
+     "sizes": {
+      "XS": 7,
+      "S": 15,
+      "M": 2
+     },
+     "sku": "SD014-04"
+    },
+    {
+     "color": "Лавандовый",
+     "img": "d1cacd8dea",
+     "sizes": {
+      "XS": 17,
+      "S": 1
+     },
+     "sku": "SD014-05"
+    }
+   ]
+  },
+  {
+   "id": "SD015",
+   "slug": "plate-zhenskoe-vechernee-mini",
+   "name": "Платье женское, вечернее, мини",
+   "category": "dresses",
+   "gender": "women",
+   "price": 5030,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Длина мини",
+    "Подойдёт для вечера"
+   ],
+   "description": "",
+   "image": "701688222f",
+   "variants": [
+    {
+     "color": "Салатовый",
+     "img": "701688222f",
+     "sizes": {
+      "XXS": 15,
+      "M": 78,
+      "L": 45,
+      "XL": 86,
+      "XXXL": 22
+     },
+     "sku": "SD015-01"
+    },
+    {
+     "color": "Черный",
+     "img": "701688222f",
+     "sizes": {
+      "XS": 74,
+      "S": 42,
+      "M": 57,
+      "L": 77,
+      "XL": 39,
+      "XXL": 67
+     },
+     "sku": "SD015-02"
+    }
+   ]
+  },
+  {
+   "id": "SD016",
+   "slug": "zhenskiy-komplekt-futbolka-i-shorty-hlopok",
+   "name": "Женский комплект: футболка и шорты, хлопок",
+   "category": "sets",
+   "gender": "women",
+   "price": 1350,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Весна / лето",
+   "features": [],
+   "description": "",
+   "image": "1c954ee92e",
+   "variants": [
+    {
+     "color": "Бирюзовый",
+     "img": "442e6b77b3",
+     "sizes": {
+      "XS": 27
+     },
+     "sku": "SD016-01"
+    },
+    {
+     "color": "Белый",
+     "img": "12372720af",
+     "sizes": {
+      "L": 20
+     },
+     "sku": "SD016-02"
+    },
+    {
+     "color": "Конфетный",
+     "img": "1c954ee92e",
+     "sizes": {
+      "S": 14
+     },
+     "sku": "SD016-03"
+    }
+   ]
+  },
+  {
+   "id": "SD017",
+   "slug": "pizhama-zhenskaya-shorty-s-futbolkoy-oversayz",
+   "name": "Пижама женская: шорты с футболкой оверсайз",
+   "category": "home",
+   "gender": "women",
+   "price": 1880,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Свободный крой оверсайз"
+   ],
+   "description": "",
+   "image": "955721ef74",
+   "variants": [
+    {
+     "color": "Красный",
+     "img": "955721ef74",
+     "sizes": {
+      "S": 6
+     },
+     "sku": "SD017-01"
+    }
+   ]
+  },
+  {
+   "id": "SD018",
+   "slug": "zhilet-zhenskiy-vyazanyy-oversayz",
+   "name": "Жилет женский, вязаный, оверсайз",
+   "category": "hoodies",
+   "gender": "women",
+   "price": 1560,
+   "old_price": null,
+   "material": "вязаный трикотаж",
+   "season": "Осень / зима",
+   "features": [
+    "Свободный крой оверсайз"
+   ],
+   "description": "",
+   "image": "a6ccf5661b",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "a6ccf5661b",
+     "sizes": {
+      "ONE": 88
+     },
+     "sku": "SD018-01"
+    }
+   ]
+  },
+  {
+   "id": "SD019",
+   "slug": "top-zhenskiy-v-rubchik",
+   "name": "Топ женский, в рубчик",
+   "category": "tops",
+   "gender": "women",
+   "price": 1030,
+   "old_price": null,
+   "material": "трикотаж в рубчик",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "8575162fe9",
+   "variants": [
+    {
+     "color": "Серый металлик",
+     "img": "fc0070acd3",
+     "sizes": {
+      "S": 4
+     },
+     "sku": "SD019-01"
+    },
+    {
+     "color": "Белый",
+     "img": "8575162fe9",
+     "sizes": {
+      "XS": 14
+     },
+     "sku": "SD019-02"
+    },
+    {
+     "color": "Бежевый",
+     "img": "25ee6f945b",
+     "sizes": {
+      "XS": 22
+     },
+     "sku": "SD019-03"
+    },
+    {
+     "color": "Серый",
+     "img": "be1b88b3d8",
+     "sizes": {
+      "XS": 25
+     },
+     "sku": "SD019-04"
+    },
+    {
+     "color": "Молочный",
+     "img": "8bb68daedc",
+     "sizes": {
+      "XS": 40
+     },
+     "sku": "SD019-05"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "53102c90f0",
+     "sizes": {
+      "S": 11,
+      "M": 23
+     },
+     "sku": "SD019-06"
+    },
+    {
+     "color": "Серый меланж",
+     "img": "3563ea2aa8",
+     "sizes": {
+      "XS": 15
+     },
+     "sku": "SD019-07"
+    },
+    {
+     "color": "Лайм",
+     "img": "5e537610c2",
+     "sizes": {
+      "XS": 32
+     },
+     "sku": "SD019-08"
+    }
+   ]
+  },
+  {
+   "id": "SD020",
+   "slug": "zhilet-zhenskiy-odnotonnyy-vyazanyy-belyy",
+   "name": "Жилет женский, однотонный, вязаный, белый",
+   "category": "hoodies",
+   "gender": "women",
+   "price": 1610,
+   "old_price": null,
+   "material": "вязаный трикотаж",
+   "season": "Осень / зима",
+   "features": [
+    "Однотонная"
+   ],
+   "description": "",
+   "image": "853d0498e0",
+   "variants": [
+    {
+     "color": "Молочный",
+     "img": "853d0498e0",
+     "sizes": {
+      "ONE": 57
+     },
+     "sku": "SD020-01"
+    }
+   ]
+  },
+  {
+   "id": "SD021",
+   "slug": "futbolka-zhenskaya-s-ukorochennym-rukavom",
+   "name": "Футболка женская, с укороченным рукавом",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 1360,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Укороченная модель"
+   ],
+   "description": "",
+   "image": "ece196cb36",
+   "variants": [
+    {
+     "color": "Бежевый",
+     "img": "2f430d5015",
+     "sizes": {
+      "S": 23,
+      "M": 52,
+      "L": 12,
+      "XL": 30,
+      "XXL": 81
+     },
+     "sku": "SD021-01"
+    },
+    {
+     "color": "Белый",
+     "img": "213508d7d1",
+     "sizes": {
+      "S": 26,
+      "M": 34,
+      "L": 44,
+      "XL": 185,
+      "XXL": 136
+     },
+     "sku": "SD021-02"
+    },
+    {
+     "color": "Красный",
+     "img": "7233090f85",
+     "sizes": {
+      "S": 90,
+      "M": 55,
+      "L": 18,
+      "XL": 30
+     },
+     "sku": "SD021-03"
+    },
+    {
+     "color": "Конфетный",
+     "img": "7cd47d29cd",
+     "sizes": {
+      "XL": 21,
+      "XXL": 25
+     },
+     "sku": "SD021-04"
+    },
+    {
+     "color": "Хаки",
+     "img": "97c7e97e5f",
+     "sizes": {
+      "XS": 17,
+      "S": 62
+     },
+     "sku": "SD021-05"
+    },
+    {
+     "color": "Пудровый",
+     "img": "b822aeb71d",
+     "sizes": {
+      "XS": 3
+     },
+     "sku": "SD021-06"
+    },
+    {
+     "color": "Сиреневый",
+     "img": "9513bafc0c",
+     "sizes": {
+      "XXL": 39
+     },
+     "sku": "SD021-07"
+    },
+    {
+     "color": "Черный",
+     "img": "dc9cbfccda",
+     "sizes": {
+      "XS": 91,
+      "S": 352,
+      "M": 224,
+      "L": 363,
+      "XL": 388,
+      "XXL": 173
+     },
+     "sku": "SD021-08"
+    }
+   ]
+  },
+  {
+   "id": "SD022",
+   "slug": "sportivnyy-kostyum-zhenskiy",
+   "name": "Спортивный костюм женский",
+   "category": "sets",
+   "gender": "women",
+   "price": 2320,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "7b27cf6465",
+   "variants": [
+    {
+     "color": "Синий",
+     "img": "e4d6b76c54",
+     "sizes": {
+      "S": 11
+     },
+     "sku": "SD022-01"
+    },
+    {
+     "color": "Лазурный",
+     "img": "172046c9f4",
+     "sizes": {
+      "S": 27
+     },
+     "sku": "SD022-02"
+    }
+   ]
+  },
+  {
+   "id": "SD023",
+   "slug": "longsliv-muzhskoy-universalnyy",
+   "name": "Лонгслив мужской, универсальный",
+   "category": "longsleeves",
+   "gender": "men",
+   "price": 1100,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "6807460103",
+   "variants": [
+    {
+     "color": "Морской",
+     "img": "318dbee49b",
+     "sizes": {
+      "XS": 36
+     },
+     "sku": "SD023-01"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "7032ece8b8",
+     "sizes": {
+      "XXS": 34,
+      "XS": 2
+     },
+     "sku": "SD023-02"
+    },
+    {
+     "color": "Черный",
+     "img": "e648953ce3",
+     "sizes": {
+      "XS": 99,
+      "S": 133,
+      "M": 68,
+      "L": 28
+     },
+     "sku": "SD023-03"
+    },
+    {
+     "color": "Серый меланж",
+     "img": "85677edf2c",
+     "sizes": {
+      "XXS": 33,
+      "S": 2
+     },
+     "sku": "SD023-04"
+    },
+    {
+     "color": "Бордовый",
+     "img": "2c9969907a",
+     "sizes": {
+      "S": 5
+     },
+     "sku": "SD023-05"
+    },
+    {
+     "color": "Красный",
+     "img": "b4aa986869",
+     "sizes": {
+      "XXS": 1
+     },
+     "sku": "SD023-06"
+    }
+   ]
+  },
+  {
+   "id": "SD024",
+   "slug": "losiny-zhenskie-sportivnye",
+   "name": "Лосины женские, спортивные",
+   "category": "pants",
+   "gender": "women",
+   "price": 1620,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "bc50e3127c",
+   "variants": [
+    {
+     "color": "Оливковый",
+     "img": "07df99a61e",
+     "sizes": {
+      "S": 8,
+      "XL": 1
+     },
+     "sku": "SD024-01"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "6cf0fd6985",
+     "sizes": {
+      "S": 15,
+      "M": 21
+     },
+     "sku": "SD024-02"
+    },
+    {
+     "color": "Фиолетовый",
+     "img": "bc50e3127c",
+     "sizes": {
+      "S": 1,
+      "M": 1
+     },
+     "sku": "SD024-03"
+    },
+    {
+     "color": "Черный",
+     "img": "6b52488453",
+     "sizes": {
+      "S": 347,
+      "M": 256,
+      "L": 544,
+      "XL": 444
+     },
+     "sku": "SD024-04"
+    },
+    {
+     "color": "Серый",
+     "img": "fbb20ac8bb",
+     "sizes": {
+      "M": 1
+     },
+     "sku": "SD024-05"
+    }
+   ]
+  },
+  {
+   "id": "SD025",
+   "slug": "zhenskaya-futbolka-polo-v-polosku",
+   "name": "Женская футболка-поло в полоску",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 1180,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "В полоску"
+   ],
+   "description": "",
+   "image": "70224a48d8",
+   "variants": [
+    {
+     "color": "Горчичный",
+     "img": "838bedc386",
+     "sizes": {
+      "XS": 46,
+      "S": 30,
+      "M": 29,
+      "L": 29,
+      "XL": 29
+     },
+     "sku": "SD025-01"
+    },
+    {
+     "color": "Коралловый",
+     "img": "bb5f067eed",
+     "sizes": {
+      "XS": 30,
+      "S": 28,
+      "M": 28,
+      "L": 30,
+      "XL": 29
+     },
+     "sku": "SD025-02"
+    },
+    {
+     "color": "Мятный",
+     "img": "05cbdf9181",
+     "sizes": {
+      "XS": 35,
+      "S": 34,
+      "M": 34,
+      "L": 31,
+      "XL": 30
+     },
+     "sku": "SD025-03"
+    },
+    {
+     "color": "Голубой",
+     "img": "5aa4715113",
+     "sizes": {
+      "XS": 28,
+      "S": 33,
+      "M": 28,
+      "L": 12,
+      "XL": 9
+     },
+     "sku": "SD025-04"
+    },
+    {
+     "color": "Белый",
+     "img": "850b68819c",
+     "sizes": {
+      "XS": 20,
+      "S": 2,
+      "L": 9,
+      "XL": 13
+     },
+     "sku": "SD025-05"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "eedf7a75cc",
+     "sizes": {
+      "M": 48
+     },
+     "sku": "SD025-06"
+    }
+   ]
+  },
+  {
+   "id": "SD026",
+   "slug": "bryuki-zhenskie-uteplennye",
+   "name": "Брюки женские, утепленные",
+   "category": "pants",
+   "gender": "women",
+   "price": 2030,
+   "old_price": null,
+   "material": "",
+   "season": "Осень / зима",
+   "features": [
+    "Утеплённая модель"
+   ],
+   "description": "",
+   "image": "ca06bb9600",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "620ad4c4eb",
+     "sizes": {
+      "S": 24,
+      "M": 21,
+      "L": 23
+     },
+     "sku": "SD026-01"
+    }
+   ]
+  },
+  {
+   "id": "SD027",
+   "slug": "zhenskie-shorty",
+   "name": "Женские шорты",
+   "category": "shorts",
+   "gender": "women",
+   "price": 930,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [],
+   "description": "",
+   "image": "989668fa2b",
+   "variants": [
+    {
+     "color": "Лимонный",
+     "img": "6276926a29",
+     "sizes": {
+      "S": 1,
+      "M": 3,
+      "L": 2
+     },
+     "sku": "SD027-01"
+    },
+    {
+     "color": "Бежевый",
+     "img": "989668fa2b",
+     "sizes": {
+      "S": 1,
+      "M": 19,
+      "L": 2
+     },
+     "sku": "SD027-02"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "03358ac33c",
+     "sizes": {
+      "M": 5
+     },
+     "sku": "SD027-03"
+    },
+    {
+     "color": "Мятный",
+     "img": "f832f26d05",
+     "sizes": {
+      "S": 11
+     },
+     "sku": "SD027-04"
+    },
+    {
+     "color": "Желтый",
+     "img": "44fe22e674",
+     "sizes": {
+      "S": 1,
+      "L": 3
+     },
+     "sku": "SD027-05"
+    },
+    {
+     "color": "Манго",
+     "img": "0a4fec0cf7",
+     "sizes": {
+      "S": 7,
+      "M": 8,
+      "L": 6
+     },
+     "sku": "SD027-06"
+    },
+    {
+     "color": "Голубой",
+     "img": "37700bc18c",
+     "sizes": {
+      "S": 19
+     },
+     "sku": "SD027-07"
+    },
+    {
+     "color": "Оранжевый",
+     "img": "4ed86b7be1",
+     "sizes": {
+      "S": 4,
+      "M": 4,
+      "L": 6
+     },
+     "sku": "SD027-08"
+    },
+    {
+     "color": "Небесно-голубой",
+     "img": "be431e5237",
+     "sizes": {
+      "L": 3
+     },
+     "sku": "SD027-09"
+    }
+   ]
+  },
+  {
+   "id": "SD028",
+   "slug": "futbolka-zhenskaya-bazovaya-hlopkovaya-pryamoy-siluet",
+   "name": "Футболка женская, базовая, хлопковая, прямой силуэт",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 1360,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [
+    "Базовая вещь на каждый день"
+   ],
+   "description": "",
+   "image": "2a43590d55",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "7d56e85e55",
+     "sizes": {
+      "XXXL": 6
+     },
+     "sku": "SD028-01"
+    },
+    {
+     "color": "Черный",
+     "img": "204399c955",
+     "sizes": {
+      "M": 83
+     },
+     "sku": "SD028-02"
+    }
+   ]
+  },
+  {
+   "id": "SD029",
+   "slug": "futbolka-muzhskaya",
+   "name": "Футболка мужская",
+   "category": "tshirts",
+   "gender": "men",
+   "price": 1410,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "3a5c727778",
+   "variants": [
+    {
+     "color": "Зеленый",
+     "img": "62f4faf8fc",
+     "sizes": {
+      "XS": 23,
+      "S": 19
+     },
+     "sku": "SD029-01"
+    },
+    {
+     "color": "Серый",
+     "img": "bfd8fe0795",
+     "sizes": {
+      "XXXS": 23
+     },
+     "sku": "SD029-02"
+    },
+    {
+     "color": "Черный",
+     "img": "5cdc9f5275",
+     "sizes": {
+      "L": 4
+     },
+     "sku": "SD029-03"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "7944faa03e",
+     "sizes": {
+      "M": 28
+     },
+     "sku": "SD029-04"
+    },
+    {
+     "color": "Белый",
+     "img": "3a5c727778",
+     "sizes": {
+      "XXL": 92
+     },
+     "sku": "SD029-05"
+    }
+   ]
+  },
+  {
+   "id": "SD030",
+   "slug": "detskaya-futbolka-odnotonnaya-hlopok",
+   "name": "Детская футболка, однотонная, хлопок",
+   "category": "tshirts",
+   "gender": "kids",
+   "price": 700,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [
+    "Однотонная"
+   ],
+   "description": "",
+   "image": "175cff5ac2",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "175cff5ac2",
+     "sizes": {
+      "ONE": 69
+     },
+     "sku": "SD030-01"
+    }
+   ]
+  },
+  {
+   "id": "SD031",
+   "slug": "futbolka-zhenskaya-v-polosku",
+   "name": "Футболка женская в полоску",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 1360,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "В полоску"
+   ],
+   "description": "",
+   "image": "0a667e3a9b",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "dc4b341f14",
+     "sizes": {
+      "S": 39,
+      "M": 58
+     },
+     "sku": "SD031-01"
+    },
+    {
+     "color": "Красный",
+     "img": "0a667e3a9b",
+     "sizes": {
+      "S": 16,
+      "M": 5
+     },
+     "sku": "SD031-02"
+    }
+   ]
+  },
+  {
+   "id": "SD032",
+   "slug": "futbolka-zhenskaya-oversayz",
+   "name": "Футболка женская, оверсайз",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 1180,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Свободный крой оверсайз"
+   ],
+   "description": "",
+   "image": "93b8e41dfc",
+   "variants": [
+    {
+     "color": "Салатовый",
+     "img": "a746289b86",
+     "sizes": {
+      "ONE": 38
+     },
+     "sku": "SD032-01"
+    },
+    {
+     "color": "Багровый",
+     "img": "c2d245130d",
+     "sizes": {
+      "ONE": 72
+     },
+     "sku": "SD032-02"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "13d1d1f467",
+     "sizes": {
+      "ONE": 48
+     },
+     "sku": "SD032-03"
+    },
+    {
+     "color": "Черный",
+     "img": "a8cfec9a7e",
+     "sizes": {
+      "ONE": 42
+     },
+     "sku": "SD032-04"
+    },
+    {
+     "color": "Оливковый",
+     "img": "4c5c41cad6",
+     "sizes": {
+      "ONE": 74
+     },
+     "sku": "SD032-05"
+    },
+    {
+     "color": "Красный",
+     "img": "2b14126ba5",
+     "sizes": {
+      "ONE": 152
+     },
+     "sku": "SD032-06"
+    }
+   ]
+  },
+  {
+   "id": "SD033",
+   "slug": "futbolka-detskaya-oversayz",
+   "name": "Футболка детская, оверсайз",
+   "category": "tshirts",
+   "gender": "kids",
+   "price": 680,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Свободный крой оверсайз"
+   ],
+   "description": "",
+   "image": "8febccdea0",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "8febccdea0",
+     "sizes": {
+      "ONE": 21
+     },
+     "sku": "SD033-01"
+    }
+   ]
+  },
+  {
+   "id": "SD034",
+   "slug": "plate-zhenskoe-s-kapyushonom-hlopok",
+   "name": "Платье женское с капюшоном, хлопок",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1180,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [
+    "С капюшоном"
+   ],
+   "description": "",
+   "image": "090e963150",
+   "variants": [
+    {
+     "color": "Красный",
+     "img": "400f8262f9",
+     "sizes": {
+      "XXS": 14,
+      "XS": 1
+     },
+     "sku": "SD034-01"
+    },
+    {
+     "color": "Черный",
+     "img": "b93199ce53",
+     "sizes": {
+      "XS": 27
+     },
+     "sku": "SD034-02"
+    },
+    {
+     "color": "Серебряный",
+     "img": "b8372f2c17",
+     "sizes": {
+      "XS": 14
+     },
+     "sku": "SD034-03"
+    },
+    {
+     "color": "Белый",
+     "img": "81c96b46b9",
+     "sizes": {
+      "S": 34,
+      "M": 12,
+      "L": 1
+     },
+     "sku": "SD034-04"
+    },
+    {
+     "color": "Фуксия",
+     "img": "7389d204f4",
+     "sizes": {
+      "XXS": 9,
+      "XS": 6
+     },
+     "sku": "SD034-05"
+    },
+    {
+     "color": "Бежевый",
+     "img": "88e78b99ea",
+     "sizes": {
+      "S": 7
+     },
+     "sku": "SD034-06"
+    },
+    {
+     "color": "Лайм",
+     "img": "8d499fdddc",
+     "sizes": {
+      "XS": 1,
+      "S": 3
+     },
+     "sku": "SD034-07"
+    },
+    {
+     "color": "Синий",
+     "img": "b99caf527e",
+     "sizes": {
+      "XXS": 15
+     },
+     "sku": "SD034-08"
+    },
+    {
+     "color": "Медный",
+     "img": "8432719ed1",
+     "sizes": {
+      "XXS": 2
+     },
+     "sku": "SD034-09"
+    },
+    {
+     "color": "Пудровый",
+     "img": "9bb5c714ad",
+     "sizes": {
+      "S": 13
+     },
+     "sku": "SD034-10"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "752574c69a",
+     "sizes": {
+      "XXS": 13
+     },
+     "sku": "SD034-11"
+    },
+    {
+     "color": "Мятный",
+     "img": "760b7c5174",
+     "sizes": {
+      "XS": 2
+     },
+     "sku": "SD034-12"
+    },
+    {
+     "color": "Оливковый",
+     "img": "20cbb8a856",
+     "sizes": {
+      "XS": 12
+     },
+     "sku": "SD034-13"
+    },
+    {
+     "color": "Серый",
+     "img": "fd171d7f8d",
+     "sizes": {
+      "XXS": 16,
+      "S": 17
+     },
+     "sku": "SD034-14"
+    }
+   ]
+  },
+  {
+   "id": "SD035",
+   "slug": "tunika-zhenskaya",
+   "name": "Туника женская",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1750,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "ff19df537e",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "ae06f89362",
+     "sizes": {
+      "S": 97,
+      "M": 39,
+      "L": 204,
+      "XL": 189,
+      "XXL": 96
+     },
+     "sku": "SD035-01"
+    },
+    {
+     "color": "Оливковый",
+     "img": "92d06c1e92",
+     "sizes": {
+      "XS": 21,
+      "S": 6,
+      "M": 3,
+      "L": 3
+     },
+     "sku": "SD035-02"
+    },
+    {
+     "color": "Белый",
+     "img": "5912d64012",
+     "sizes": {
+      "S": 113,
+      "M": 119,
+      "XXL": 124
+     },
+     "sku": "SD035-03"
+    },
+    {
+     "color": "Салатовый",
+     "img": "dbe7b3f973",
+     "sizes": {
+      "S": 8
+     },
+     "sku": "SD035-04"
+    }
+   ]
+  },
+  {
+   "id": "SD036",
+   "slug": "zhenskie-trusy",
+   "name": "Женские трусы",
+   "category": "underwear",
+   "gender": "women",
+   "price": 1550,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "79744854c1",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "8817bd68bb",
+     "sizes": {
+      "S": 14,
+      "L": 304,
+      "XL": 11,
+      "XXL": 4
+     },
+     "sku": "SD036-01"
+    },
+    {
+     "color": "Белый",
+     "img": "e6cdf29891",
+     "sizes": {
+      "S": 52,
+      "L": 2
+     },
+     "sku": "SD036-02"
+    }
+   ]
+  },
+  {
+   "id": "SD037",
+   "slug": "zhenskaya-mayka-top",
+   "name": "Женская майка-топ",
+   "category": "tops",
+   "gender": "women",
+   "price": 640,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "6041e223b9",
+   "variants": [
+    {
+     "color": "Аметистовый",
+     "img": "de4ba302cb",
+     "sizes": {
+      "S": 34
+     },
+     "sku": "SD037-01"
+    }
+   ]
+  },
+  {
+   "id": "SD038",
+   "slug": "sumka-shopper-s-printom",
+   "name": "Сумка-шоппер с принтом",
+   "category": "bags",
+   "gender": "unisex",
+   "price": 770,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "С принтом"
+   ],
+   "description": "",
+   "image": "687e990fe7",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "fe6612af09",
+     "sizes": {
+      "ONE": 397
+     },
+     "sku": "SD038-01"
+    },
+    {
+     "color": "Молочный",
+     "img": "25f7d51179",
+     "sizes": {
+      "ONE": 20
+     },
+     "sku": "SD038-02"
+    },
+    {
+     "color": "Голубой",
+     "img": "587ae020ae",
+     "sizes": {
+      "ONE": 270
+     },
+     "sku": "SD038-03"
+    },
+    {
+     "color": "Красный",
+     "img": "0936b678f5",
+     "sizes": {
+      "ONE": 26
+     },
+     "sku": "SD038-04"
+    }
+   ]
+  },
+  {
+   "id": "SD039",
+   "slug": "sportivnyy-kostyum-zhenskiy-2",
+   "name": "Спортивный костюм женский",
+   "category": "sets",
+   "gender": "women",
+   "price": 2320,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "1452c47f7c",
+   "variants": [
+    {
+     "color": "Бирюзовый",
+     "img": "e160dc2e55",
+     "sizes": {
+      "S": 6,
+      "L": 10
+     },
+     "sku": "SD039-01"
+    },
+    {
+     "color": "Фуксия",
+     "img": "1452c47f7c",
+     "sizes": {
+      "S": 47
+     },
+     "sku": "SD039-02"
+    }
+   ]
+  },
+  {
+   "id": "SD040",
+   "slug": "beysbolka-uniseks-na-metallicheskoy-zastezhke-i-na-lipuchke",
+   "name": "Бейсболка унисекс на металлической застёжке и на липучке",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 1290,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Регулируемая застёжка-липучка",
+    "Металлическая застёжка"
+   ],
+   "description": "",
+   "image": "15e374cb9d",
+   "variants": [
+    {
+     "color": "Зеленый",
+     "img": "3d39f9f891",
+     "sizes": {
+      "ONE": 424
+     },
+     "sku": "SD040-01"
+    },
+    {
+     "color": "Серый",
+     "img": "8d5f6be179",
+     "sizes": {
+      "ONE": 283
+     },
+     "sku": "SD040-02"
+    },
+    {
+     "color": "Лесной зеленый",
+     "img": "20c0142123",
+     "sizes": {
+      "ONE": 108
+     },
+     "sku": "SD040-03"
+    },
+    {
+     "color": "Манго",
+     "img": "a4cdacd03f",
+     "sizes": {
+      "ONE": 148
+     },
+     "sku": "SD040-04"
+    },
+    {
+     "color": "Голубой",
+     "img": "af52bf847d",
+     "sizes": {
+      "ONE": 87
+     },
+     "sku": "SD040-05"
+    },
+    {
+     "color": "Бордовый",
+     "img": "15e374cb9d",
+     "sizes": {
+      "ONE": 78
+     },
+     "sku": "SD040-06"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "a006a00176",
+     "sizes": {
+      "ONE": 32
+     },
+     "sku": "SD040-07"
+    },
+    {
+     "color": "Серый меланж",
+     "img": "2837b86af2",
+     "sizes": {
+      "ONE": 159
+     },
+     "sku": "SD040-08"
+    },
+    {
+     "color": "Белый",
+     "img": "9af00888cb",
+     "sizes": {
+      "ONE": 53
+     },
+     "sku": "SD040-09"
+    },
+    {
+     "color": "Зеленый хаки",
+     "img": "b0f7dfec20",
+     "sizes": {
+      "ONE": 218
+     },
+     "sku": "SD040-10"
+    },
+    {
+     "color": "Красный",
+     "img": "850f61705b",
+     "sizes": {
+      "ONE": 128
+     },
+     "sku": "SD040-11"
+    },
+    {
+     "color": "Черный",
+     "img": "8dbca3feb6",
+     "sizes": {
+      "ONE": 248
+     },
+     "sku": "SD040-12"
+    },
+    {
+     "color": "Синий",
+     "img": "f5df90fda6",
+     "sizes": {
+      "ONE": 230
+     },
+     "sku": "SD040-13"
+    },
+    {
+     "color": "Индиго",
+     "img": "42cef3b078",
+     "sizes": {
+      "ONE": 225
+     },
+     "sku": "SD040-14"
+    },
+    {
+     "color": "Светло-синий",
+     "img": "50e1e827a6",
+     "sizes": {
+      "ONE": 104
+     },
+     "sku": "SD040-15"
+    },
+    {
+     "color": "Разноцветный",
+     "img": "555213a39e",
+     "sizes": {
+      "ONE": 123
+     },
+     "sku": "SD040-16"
+    }
+   ]
+  },
+  {
+   "id": "SD041",
+   "slug": "mayka-zhenskaya-bazovaya-one-zise",
+   "name": "Майка женская, базовая, one zise",
+   "category": "tops",
+   "gender": "women",
+   "price": 680,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Базовая вещь на каждый день"
+   ],
+   "description": "",
+   "image": "62f2697a80",
+   "variants": [
+    {
+     "color": "Фиолетовый",
+     "img": "71b792b48c",
+     "sizes": {
+      "ONE": 38
+     },
+     "sku": "SD041-01"
+    },
+    {
+     "color": "Розовый",
+     "img": "3f8d07430f",
+     "sizes": {
+      "ONE": 18
+     },
+     "sku": "SD041-02"
+    },
+    {
+     "color": "Красный",
+     "img": "59d7b3229d",
+     "sizes": {
+      "ONE": 64
+     },
+     "sku": "SD041-03"
+    },
+    {
+     "color": "Черный",
+     "img": "14930b6fc7",
+     "sizes": {
+      "ONE": 46
+     },
+     "sku": "SD041-04"
+    },
+    {
+     "color": "Серый",
+     "img": "cea5ba592b",
+     "sizes": {
+      "ONE": 46
+     },
+     "sku": "SD041-05"
+    },
+    {
+     "color": "Белый",
+     "img": "62f2697a80",
+     "sizes": {
+      "ONE": 18
+     },
+     "sku": "SD041-06"
+    }
+   ]
+  },
+  {
+   "id": "SD042",
+   "slug": "bryuki-domashnie-zhenskie-2",
+   "name": "Брюки домашние, женские",
+   "category": "home",
+   "gender": "women",
+   "price": 1490,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Для дома и отдыха"
+   ],
+   "description": "",
+   "image": "e1ef35f07c",
+   "variants": [
+    {
+     "color": "Светло-синий",
+     "img": "96b254ac38",
+     "sizes": {
+      "L": 4
+     },
+     "sku": "SD042-01"
+    },
+    {
+     "color": "Лавандовый",
+     "img": "7c138708d3",
+     "sizes": {
+      "S": 36,
+      "M": 1,
+      "XL": 1
+     },
+     "sku": "SD042-02"
+    },
+    {
+     "color": "Розовый",
+     "img": "86df95a7fa",
+     "sizes": {
+      "S": 14
+     },
+     "sku": "SD042-03"
+    },
+    {
+     "color": "Угольный",
+     "img": "80f5c2e92a",
+     "sizes": {
+      "S": 1,
+      "L": 24
+     },
+     "sku": "SD042-04"
+    },
+    {
+     "color": "Бежевый",
+     "img": "8df3456d9b",
+     "sizes": {
+      "S": 3
+     },
+     "sku": "SD042-05"
+    },
+    {
+     "color": "Голубой",
+     "img": "7f54614ac2",
+     "sizes": {
+      "S": 13
+     },
+     "sku": "SD042-06"
+    }
+   ]
+  },
+  {
+   "id": "SD043",
+   "slug": "velosipedki-zhenskie-shorty-sportivnye",
+   "name": "Велосипедки женские, шорты спортивные",
+   "category": "shorts",
+   "gender": "women",
+   "price": 760,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "778bd27e0c",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "294a31cc20",
+     "sizes": {
+      "XS": 232,
+      "S": 200,
+      "M": 170
+     },
+     "sku": "SD043-01"
+    }
+   ]
+  },
+  {
+   "id": "SD044",
+   "slug": "komplekt-zhenskiy-velosipedki-i-futbolka-oversayz",
+   "name": "Комплект женский: велосипедки и футболка, оверсайз",
+   "category": "sets",
+   "gender": "women",
+   "price": 1440,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Свободный крой оверсайз"
+   ],
+   "description": "",
+   "image": "844b8dafcb",
+   "variants": [
+    {
+     "color": "Зеленый",
+     "img": "707d6d6191",
+     "sizes": {
+      "S": 13,
+      "M": 4,
+      "L": 1
+     },
+     "sku": "SD044-01"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "9ab18c2b4e",
+     "sizes": {
+      "S": 24
+     },
+     "sku": "SD044-02"
+    },
+    {
+     "color": "Светло-бежевый",
+     "img": "6ba8f00ad5",
+     "sizes": {
+      "S": 23,
+      "M": 20,
+      "L": 9
+     },
+     "sku": "SD044-03"
+    },
+    {
+     "color": "Мятный",
+     "img": "844b8dafcb",
+     "sizes": {
+      "S": 5
+     },
+     "sku": "SD044-04"
+    }
+   ]
+  },
+  {
+   "id": "SD045",
+   "slug": "balaklava-vyazanaya-3-tsveta",
+   "name": "Балаклава вязаная, 3 цвета",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 1290,
+   "old_price": null,
+   "material": "вязаный трикотаж",
+   "season": "Осень / зима",
+   "features": [],
+   "description": "",
+   "image": "a1f847b2ef",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "04f54abab9",
+     "sizes": {
+      "ONE": 52
+     },
+     "sku": "SD045-01"
+    },
+    {
+     "color": "Конфетный",
+     "img": "a1f847b2ef",
+     "sizes": {
+      "ONE": 14
+     },
+     "sku": "SD045-02"
+    },
+    {
+     "color": "Оранжевый",
+     "img": "2a30976a01",
+     "sizes": {
+      "ONE": 11
+     },
+     "sku": "SD045-03"
+    }
+   ]
+  },
+  {
+   "id": "SD046",
+   "slug": "velosipedki-v-rubchik-sportivnye",
+   "name": "Велосипедки в рубчик, спортивные",
+   "category": "shorts",
+   "gender": "women",
+   "price": 1000,
+   "old_price": null,
+   "material": "трикотаж в рубчик",
+   "season": "Весна / лето",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "dfd9370356",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "dfd9370356",
+     "sizes": {
+      "M": 10,
+      "L": 16,
+      "XL": 17
+     },
+     "sku": "SD046-01"
+    },
+    {
+     "color": "Темно-розовый",
+     "img": "013ba050f6",
+     "sizes": {
+      "L": 8,
+      "XXL": 10
+     },
+     "sku": "SD046-02"
+    }
+   ]
+  },
+  {
+   "id": "SD047",
+   "slug": "zhenskiy-belevoy-top-seryy",
+   "name": "Женский бельевой топ, серый",
+   "category": "underwear",
+   "gender": "women",
+   "price": 1030,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "933ccc9f04",
+   "variants": [
+    {
+     "color": "Серый",
+     "img": "933ccc9f04",
+     "sizes": {
+      "M": 114
+     },
+     "sku": "SD047-01"
+    }
+   ]
+  },
+  {
+   "id": "SD048",
+   "slug": "panama-mehovaya-plyushevaya-v-koreyskom-stile",
+   "name": "Панама меховая плюшевая в корейском стиле",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 590,
+   "old_price": null,
+   "material": "искусственный мех / плюш",
+   "season": "Осень / зима",
+   "features": [
+    "В корейском стиле"
+   ],
+   "description": "",
+   "image": "991c63cc81",
+   "variants": [
+    {
+     "color": "Карамельный",
+     "img": "991c63cc81",
+     "sizes": {
+      "ONE": 47
+     },
+     "sku": "SD048-01"
+    },
+    {
+     "color": "Черный",
+     "img": "29ea7ec5b7",
+     "sizes": {
+      "ONE": 92
+     },
+     "sku": "SD048-02"
+    }
+   ]
+  },
+  {
+   "id": "SD049",
+   "slug": "muzhskaya-vodolazka-chernaya",
+   "name": "Мужская водолазка, чёрная",
+   "category": "longsleeves",
+   "gender": "men",
+   "price": 1940,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "0fd1f2e751",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "0fd1f2e751",
+     "sizes": {
+      "M": 55
+     },
+     "sku": "SD049-01"
+    }
+   ]
+  },
+  {
+   "id": "SD050",
+   "slug": "mayka-zhenskaya-belevaya-iz-plotnogo-hlopka",
+   "name": "Майка женская бельевая, из плотного хлопка",
+   "category": "underwear",
+   "gender": "women",
+   "price": 430,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "e4452ec30e",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "8dc6c803a1",
+     "sizes": {
+      "M": 41,
+      "L": 50
+     },
+     "sku": "SD050-01"
+    }
+   ]
+  },
+  {
+   "id": "SD051",
+   "slug": "letniy-kostyum-razletayki",
+   "name": "Летний костюм, разлетайки",
+   "category": "sets",
+   "gender": "women",
+   "price": 1900,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Летняя модель"
+   ],
+   "description": "",
+   "image": "5d053f0f1a",
+   "variants": [
+    {
+     "color": "Серый меланж",
+     "img": "408ff0e957",
+     "sizes": {
+      "S": 17,
+      "M/L": 57
+     },
+     "sku": "SD051-01"
+    },
+    {
+     "color": "Черный",
+     "img": "a207604e61",
+     "sizes": {
+      "S": 53,
+      "M/L": 13
+     },
+     "sku": "SD051-02"
+    },
+    {
+     "color": "Белый",
+     "img": "5d053f0f1a",
+     "sizes": {
+      "S": 466,
+      "M/L": 68
+     },
+     "sku": "SD051-03"
+    },
+    {
+     "color": "Угольный",
+     "img": "e2fc209876",
+     "sizes": {
+      "S": 32,
+      "M/L": 39
+     },
+     "sku": "SD051-04"
+    },
+    {
+     "color": "Лавандовый",
+     "img": "f7fb28b9c9",
+     "sizes": {
+      "S": 90
+     },
+     "sku": "SD051-05"
+    }
+   ]
+  },
+  {
+   "id": "SD052",
+   "slug": "losiny-leginsy-sportivnye",
+   "name": "Лосины, легинсы спортивные",
+   "category": "pants",
+   "gender": "women",
+   "price": 1060,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "eccc0176f5",
+   "variants": [
+    {
+     "color": "Серый меланж",
+     "img": "eccc0176f5",
+     "sizes": {
+      "S": 31,
+      "M": 24,
+      "L": 12
+     },
+     "sku": "SD052-01"
+    },
+    {
+     "color": "Черный",
+     "img": "0509f02a96",
+     "sizes": {
+      "L": 34
+     },
+     "sku": "SD052-02"
+    }
+   ]
+  },
+  {
+   "id": "SD053",
+   "slug": "mayka-zhenskaya-tkan-v-rubchik",
+   "name": "Майка женская, ткань в рубчик",
+   "category": "tops",
+   "gender": "women",
+   "price": 590,
+   "old_price": null,
+   "material": "трикотаж в рубчик",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "59455909e8",
+   "variants": [
+    {
+     "color": "Салатовый",
+     "img": "59455909e8",
+     "sizes": {
+      "L": 18
+     },
+     "sku": "SD053-01"
+    }
+   ]
+  },
+  {
+   "id": "SD054",
+   "slug": "futbolka-zhenskaya-oversayz-udlinennaya",
+   "name": "Футболка женская, оверсайз, удлиненная",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 970,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Свободный крой оверсайз",
+    "Удлинённая модель"
+   ],
+   "description": "",
+   "image": "067c8a7d77",
+   "variants": [
+    {
+     "color": "Оливковый",
+     "img": "a4611f2649",
+     "sizes": {
+      "S": 140,
+      "M": 15,
+      "L": 143
+     },
+     "sku": "SD054-01"
+    },
+    {
+     "color": "Красный",
+     "img": "ba98b35f41",
+     "sizes": {
+      "S": 92,
+      "M": 15,
+      "L": 5
+     },
+     "sku": "SD054-02"
+    },
+    {
+     "color": "Белый",
+     "img": "b1f76294e1",
+     "sizes": {
+      "S": 302,
+      "M": 232,
+      "L": 120
+     },
+     "sku": "SD054-03"
+    },
+    {
+     "color": "Аметистовый",
+     "img": "8d5a868fb6",
+     "sizes": {
+      "S": 76,
+      "M": 198,
+      "L": 115
+     },
+     "sku": "SD054-04"
+    },
+    {
+     "color": "Горчичный",
+     "img": "6bf0c608fa",
+     "sizes": {
+      "L": 79
+     },
+     "sku": "SD054-05"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "675b32087f",
+     "sizes": {
+      "S": 53,
+      "M": 78,
+      "L": 17
+     },
+     "sku": "SD054-06"
+    },
+    {
+     "color": "Розовый",
+     "img": "057a436641",
+     "sizes": {
+      "S": 45,
+      "L": 60
+     },
+     "sku": "SD054-07"
+    },
+    {
+     "color": "Черный",
+     "img": "53ef28528f",
+     "sizes": {
+      "S": 196,
+      "M": 38,
+      "L": 23
+     },
+     "sku": "SD054-08"
+    },
+    {
+     "color": "Серый меланж",
+     "img": "3553650dd1",
+     "sizes": {
+      "S": 145,
+      "M": 92,
+      "L": 229
+     },
+     "sku": "SD054-09"
+    },
+    {
+     "color": "Желтый",
+     "img": "067c8a7d77",
+     "sizes": {
+      "M": 111
+     },
+     "sku": "SD054-10"
+    }
+   ]
+  },
+  {
+   "id": "SD055",
+   "slug": "futbolka-zhenskaya",
+   "name": "Футболка женская",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 1360,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "ce8851c8fc",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "4902c1563f",
+     "sizes": {
+      "XS": 121,
+      "S": 109
+     },
+     "sku": "SD055-01"
+    },
+    {
+     "color": "Красный",
+     "img": "ce8851c8fc",
+     "sizes": {
+      "XXS": 178,
+      "XS": 77
+     },
+     "sku": "SD055-02"
+    },
+    {
+     "color": "Оливковый",
+     "img": "a4a33073cc",
+     "sizes": {
+      "XS": 7
+     },
+     "sku": "SD055-03"
+    }
+   ]
+  },
+  {
+   "id": "SD056",
+   "slug": "top-zhenskiy-bazovyy-sportivnyy",
+   "name": "Топ женский, базовый, спортивный",
+   "category": "tops",
+   "gender": "women",
+   "price": 640,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подходит для спорта и активного отдыха",
+    "Базовая вещь на каждый день"
+   ],
+   "description": "",
+   "image": "95fb9989be",
+   "variants": [
+    {
+     "color": "Фуксия",
+     "img": "696138a252",
+     "sizes": {
+      "S": 69,
+      "M": 145
+     },
+     "sku": "SD056-01"
+    },
+    {
+     "color": "Черный",
+     "img": "a8c137166a",
+     "sizes": {
+      "M": 44,
+      "L": 7
+     },
+     "sku": "SD056-02"
+    }
+   ]
+  },
+  {
+   "id": "SD057",
+   "slug": "plate-polo-na-treh-pugovitsah",
+   "name": "Платье-поло на трех пуговицах",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1520,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Застёжка на пуговицы"
+   ],
+   "description": "",
+   "image": "3b2fb6adc9",
+   "variants": [
+    {
+     "color": "Розовый",
+     "img": "b2d071a104",
+     "sizes": {
+      "XXS": 1,
+      "XS": 21,
+      "S": 5,
+      "L": 2,
+      "XXL": 12
+     },
+     "sku": "SD057-01"
+    },
+    {
+     "color": "Оранжевый",
+     "img": "5af8928ed7",
+     "sizes": {
+      "XXS": 2,
+      "XS": 17,
+      "S": 1,
+      "M": 4,
+      "L": 1
+     },
+     "sku": "SD057-02"
+    },
+    {
+     "color": "Конфетный",
+     "img": "639938f87b",
+     "sizes": {
+      "XS": 1,
+      "S": 43,
+      "L": 9,
+      "XXL": 20
+     },
+     "sku": "SD057-03"
+    },
+    {
+     "color": "Зеленый хаки",
+     "img": "8796e6b373",
+     "sizes": {
+      "XS": 28,
+      "S": 6,
+      "L": 7
+     },
+     "sku": "SD057-04"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "6efcb70bba",
+     "sizes": {
+      "XS": 2,
+      "S": 63,
+      "M": 26,
+      "L": 17,
+      "XL": 23,
+      "XXL": 83
+     },
+     "sku": "SD057-05"
+    },
+    {
+     "color": "Зеленый",
+     "img": "2479a3050e",
+     "sizes": {
+      "XS": 10,
+      "S": 15,
+      "M": 23,
+      "XL": 34
+     },
+     "sku": "SD057-06"
+    },
+    {
+     "color": "Черный",
+     "img": "bda0248f68",
+     "sizes": {
+      "S": 33,
+      "L": 1,
+      "XL": 22,
+      "XXL": 22
+     },
+     "sku": "SD057-07"
+    },
+    {
+     "color": "Серый",
+     "img": "855aeb90dd",
+     "sizes": {
+      "XS": 8,
+      "S": 23,
+      "L": 4
+     },
+     "sku": "SD057-08"
+    },
+    {
+     "color": "Рыжий",
+     "img": "7344d94c6c",
+     "sizes": {
+      "S": 10,
+      "M": 5
+     },
+     "sku": "SD057-09"
+    },
+    {
+     "color": "Желтый",
+     "img": "089e402c81",
+     "sizes": {
+      "S": 1,
+      "M": 8,
+      "L": 4
+     },
+     "sku": "SD057-10"
+    },
+    {
+     "color": "Красный",
+     "img": "9119180d52",
+     "sizes": {
+      "XS": 13,
+      "S": 29,
+      "M": 16,
+      "L": 16,
+      "XL": 9,
+      "XXL": 12
+     },
+     "sku": "SD057-11"
+    },
+    {
+     "color": "Салатовый",
+     "img": "bc40fd240f",
+     "sizes": {
+      "M": 1,
+      "XL": 9,
+      "XXL": 10
+     },
+     "sku": "SD057-12"
+    },
+    {
+     "color": "Мятный",
+     "img": "380e8559df",
+     "sizes": {
+      "L": 3
+     },
+     "sku": "SD057-13"
+    },
+    {
+     "color": "Голубой",
+     "img": "09be5cd070",
+     "sizes": {
+      "XXS": 1,
+      "M": 7
+     },
+     "sku": "SD057-14"
+    },
+    {
+     "color": "Вишневый",
+     "img": "288a081748",
+     "sizes": {
+      "M": 14,
+      "L": 8,
+      "XL": 1
+     },
+     "sku": "SD057-15"
+    },
+    {
+     "color": "Хаки",
+     "img": "f30a1477e4",
+     "sizes": {
+      "XS": 14,
+      "S": 4,
+      "L": 9
+     },
+     "sku": "SD057-16"
+    },
+    {
+     "color": "Белый",
+     "img": "3b2fb6adc9",
+     "sizes": {
+      "M": 12,
+      "L": 7
+     },
+     "sku": "SD057-17"
+    },
+    {
+     "color": "Небесно-голубой",
+     "img": "b68ea7ca61",
+     "sizes": {
+      "L": 10
+     },
+     "sku": "SD057-18"
+    },
+    {
+     "color": "Бордовый",
+     "img": "403433388c",
+     "sizes": {
+      "XXS": 4
+     },
+     "sku": "SD057-19"
+    },
+    {
+     "color": "Лесной зеленый",
+     "img": "08313d96d7",
+     "sizes": {
+      "S": 10
+     },
+     "sku": "SD057-20"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "0b965128f4",
+     "sizes": {
+      "XS": 10,
+      "M": 1
+     },
+     "sku": "SD057-21"
+    },
+    {
+     "color": "Пурпурный",
+     "img": "80ce77b970",
+     "sizes": {
+      "XS": 16
+     },
+     "sku": "SD057-22"
+    }
+   ]
+  },
+  {
+   "id": "SD058",
+   "slug": "longsliv-zhenskiy-s-dlinnym-rukavom",
+   "name": "Лонгслив женский, с длинным рукавом",
+   "category": "longsleeves",
+   "gender": "women",
+   "price": 1180,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Длинный рукав"
+   ],
+   "description": "",
+   "image": "da9c3f1bb9",
+   "variants": [
+    {
+     "color": "Карамельный",
+     "img": "21a456d90d",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD058-01"
+    },
+    {
+     "color": "Белый",
+     "img": "039c37c699",
+     "sizes": {
+      "XS": 36,
+      "S": 35,
+      "M": 24,
+      "L": 34,
+      "XL": 21
+     },
+     "sku": "SD058-02"
+    },
+    {
+     "color": "Кораллово-розовый",
+     "img": "c0c5cdc0c1",
+     "sizes": {
+      "XS": 26
+     },
+     "sku": "SD058-03"
+    }
+   ]
+  },
+  {
+   "id": "SD059",
+   "slug": "pizhama-zhenskaya",
+   "name": "Пижама женская",
+   "category": "home",
+   "gender": "women",
+   "price": 1420,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "a3e20f1c8e",
+   "variants": [
+    {
+     "color": "Конфетный",
+     "img": "5750d02412",
+     "sizes": {
+      "M": 12,
+      "L": 13
+     },
+     "sku": "SD059-01"
+    },
+    {
+     "color": "Кораллово-розовый",
+     "img": "5ac74a3f60",
+     "sizes": {
+      "XS": 18,
+      "S": 42
+     },
+     "sku": "SD059-02"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "c88270b6c8",
+     "sizes": {
+      "S": 14,
+      "L": 20
+     },
+     "sku": "SD059-03"
+    },
+    {
+     "color": "Белый",
+     "img": "a3e20f1c8e",
+     "sizes": {
+      "XS": 17,
+      "M": 27
+     },
+     "sku": "SD059-04"
+    }
+   ]
+  },
+  {
+   "id": "SD060",
+   "slug": "legginsy-zhenskie-sportivnye",
+   "name": "Леггинсы женские, спортивные",
+   "category": "pants",
+   "gender": "women",
+   "price": 1060,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "efeff2db45",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "efeff2db45",
+     "sizes": {
+      "M": 1,
+      "L": 21,
+      "XL": 8,
+      "XXL": 14,
+      "XXXL": 36
+     },
+     "sku": "SD060-01"
+    }
+   ]
+  },
+  {
+   "id": "SD061",
+   "slug": "futbolka-muzhskaya-klassicheskaya",
+   "name": "Футболка мужская, классическая",
+   "category": "tshirts",
+   "gender": "men",
+   "price": 1410,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "55f72e8f00",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "55f72e8f00",
+     "sizes": {
+      "XXXS": 51,
+      "XXS": 50,
+      "XS": 28,
+      "S": 142,
+      "M": 69,
+      "L": 143,
+      "XL": 20,
+      "XXL": 70,
+      "XXXL": 74,
+      "4XL": 103
+     },
+     "sku": "SD061-01"
+    },
+    {
+     "color": "Оливковый",
+     "img": "e70f1fa1f1",
+     "sizes": {
+      "XXXS": 66,
+      "XS": 102,
+      "M": 6
+     },
+     "sku": "SD061-02"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "d0974e0737",
+     "sizes": {
+      "XS": 24,
+      "S": 133,
+      "M": 6,
+      "L": 46,
+      "XL": 53
+     },
+     "sku": "SD061-03"
+    },
+    {
+     "color": "Черный",
+     "img": "91911553d5",
+     "sizes": {
+      "XS": 90,
+      "S": 535,
+      "M": 886,
+      "L": 374,
+      "XL": 422,
+      "XXL": 383,
+      "XXXL": 152,
+      "4XL": 9
+     },
+     "sku": "SD061-04"
+    },
+    {
+     "color": "Желтый",
+     "img": "3f6f271349",
+     "sizes": {
+      "XXXS": 43,
+      "XS": 99
+     },
+     "sku": "SD061-05"
+    },
+    {
+     "color": "Серый меланж",
+     "img": "305daeb2ff",
+     "sizes": {
+      "M": 18
+     },
+     "sku": "SD061-06"
+    },
+    {
+     "color": "Серый",
+     "img": "486a510304",
+     "sizes": {
+      "L": 77
+     },
+     "sku": "SD061-07"
+    }
+   ]
+  },
+  {
+   "id": "SD062",
+   "slug": "plate-zhenskoe-oversayz-midi-s-razrezom",
+   "name": "Платье женское, оверсайз, миди, с разрезом",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1770,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Свободный крой оверсайз",
+    "Длина миди",
+    "С разрезом"
+   ],
+   "description": "",
+   "image": "e0e30c3cc3",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "e0e30c3cc3",
+     "sizes": {
+      "XS": 26,
+      "S": 32,
+      "M": 24,
+      "XL": 35,
+      "XXL": 30,
+      "XXXL": 27
+     },
+     "sku": "SD062-01"
+    },
+    {
+     "color": "Оливковый",
+     "img": "e61e0a5530",
+     "sizes": {
+      "XS": 55,
+      "S": 42,
+      "M": 59,
+      "L": 59,
+      "XL": 37,
+      "XXL": 93,
+      "XXXL": 29
+     },
+     "sku": "SD062-02"
+    },
+    {
+     "color": "Розовый",
+     "img": "dbe457ef67",
+     "sizes": {
+      "S": 14,
+      "M": 19,
+      "L": 15,
+      "XL": 12
+     },
+     "sku": "SD062-03"
+    },
+    {
+     "color": "Хаки",
+     "img": "3a739a59ec",
+     "sizes": {
+      "XS": 35,
+      "S": 26,
+      "L": 9,
+      "XL": 56,
+      "XXL": 20
+     },
+     "sku": "SD062-04"
+    },
+    {
+     "color": "Красный",
+     "img": "4871070a38",
+     "sizes": {
+      "XS": 18,
+      "S": 30,
+      "M": 29,
+      "L": 4,
+      "XL": 15,
+      "XXL": 36
+     },
+     "sku": "SD062-05"
+    },
+    {
+     "color": "Угольный",
+     "img": "fa754f49f3",
+     "sizes": {
+      "S": 20,
+      "M": 30,
+      "XL": 63
+     },
+     "sku": "SD062-06"
+    },
+    {
+     "color": "Лавандовый",
+     "img": "98e0d68c67",
+     "sizes": {
+      "XS": 29,
+      "S": 38,
+      "L": 52,
+      "XXL": 86,
+      "XXXL": 59
+     },
+     "sku": "SD062-07"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "91d840b537",
+     "sizes": {
+      "XS": 40,
+      "S": 42,
+      "M": 39
+     },
+     "sku": "SD062-08"
+    },
+    {
+     "color": "Черный",
+     "img": "638e8ded89",
+     "sizes": {
+      "XS": 3,
+      "M": 85,
+      "L": 183,
+      "XL": 31,
+      "XXL": 109,
+      "XXXL": 32
+     },
+     "sku": "SD062-09"
+    }
+   ]
+  },
+  {
+   "id": "SD063",
+   "slug": "yubka-shorty-zhenskie",
+   "name": "Юбка шорты женские",
+   "category": "shorts",
+   "gender": "women",
+   "price": 1680,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [],
+   "description": "",
+   "image": "84f93f9659",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "5c5b720c6d",
+     "sizes": {
+      "XXS": 69,
+      "XS": 101,
+      "S": 193,
+      "M": 10,
+      "L": 111,
+      "XL": 54,
+      "XXL": 78
+     },
+     "sku": "SD063-01"
+    },
+    {
+     "color": "Темно-серый",
+     "img": "84f93f9659",
+     "sizes": {
+      "XS": 2,
+      "S": 100,
+      "XL": 2,
+      "XXL": 115
+     },
+     "sku": "SD063-02"
+    },
+    {
+     "color": "Белый",
+     "img": "308436a2b9",
+     "sizes": {
+      "XS": 23,
+      "XL": 45,
+      "XXL": 20
+     },
+     "sku": "SD063-03"
+    },
+    {
+     "color": "Хаки",
+     "img": "d5a284733a",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD063-04"
+    },
+    {
+     "color": "Темно-бирюзовый",
+     "img": "14c4210cdf",
+     "sizes": {
+      "XXS": 1
+     },
+     "sku": "SD063-05"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "d3490b6a4b",
+     "sizes": {
+      "XXS": 24,
+      "XS": 10,
+      "S": 56,
+      "M": 51,
+      "L": 34,
+      "XL": 7,
+      "XXL": 19
+     },
+     "sku": "SD063-06"
+    },
+    {
+     "color": "Горчичный",
+     "img": "ee93e32542",
+     "sizes": {
+      "XXS": 1
+     },
+     "sku": "SD063-07"
+    },
+    {
+     "color": "Шоколадный",
+     "img": "d306f3f17e",
+     "sizes": {
+      "XS": 14
+     },
+     "sku": "SD063-08"
+    },
+    {
+     "color": "Хром",
+     "img": "92f9727c2b",
+     "sizes": {
+      "XS": 9
+     },
+     "sku": "SD063-09"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "7a745ea595",
+     "sizes": {
+      "XS": 22,
+      "XL": 21
+     },
+     "sku": "SD063-10"
+    }
+   ]
+  },
+  {
+   "id": "SD064",
+   "slug": "futbolka-oversayz-svobodnaya-udlinennaya",
+   "name": "Футболка оверсайз, свободная, удлиненная",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 1490,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Свободный крой оверсайз",
+    "Удлинённая модель"
+   ],
+   "description": "",
+   "image": "0e73f22175",
+   "variants": [
+    {
+     "color": "Серый меланж",
+     "img": "bd70976f25",
+     "sizes": {
+      "ONE": 45
+     },
+     "sku": "SD064-01"
+    },
+    {
+     "color": "Красный",
+     "img": "4eeb2ee4f1",
+     "sizes": {
+      "ONE": 101
+     },
+     "sku": "SD064-02"
+    },
+    {
+     "color": "Индиго",
+     "img": "f1debe6690",
+     "sizes": {
+      "ONE": 17
+     },
+     "sku": "SD064-03"
+    },
+    {
+     "color": "Серый",
+     "img": "b4c597a866",
+     "sizes": {
+      "ONE": 62
+     },
+     "sku": "SD064-04"
+    },
+    {
+     "color": "Синий",
+     "img": "e9100a9e4f",
+     "sizes": {
+      "ONE": 104
+     },
+     "sku": "SD064-05"
+    },
+    {
+     "color": "Молочный",
+     "img": "0e73f22175",
+     "sizes": {
+      "ONE": 93
+     },
+     "sku": "SD064-06"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "225f8f8065",
+     "sizes": {
+      "ONE": 81
+     },
+     "sku": "SD064-07"
+    },
+    {
+     "color": "Черный",
+     "img": "76ecb78be6",
+     "sizes": {
+      "ONE": 16
+     },
+     "sku": "SD064-08"
+    },
+    {
+     "color": "Белый",
+     "img": "2c0bbe5561",
+     "sizes": {
+      "ONE": 33
+     },
+     "sku": "SD064-09"
+    },
+    {
+     "color": "Оливковый",
+     "img": "c229cc9b5d",
+     "sizes": {
+      "ONE": 34
+     },
+     "sku": "SD064-10"
+    }
+   ]
+  },
+  {
+   "id": "SD065",
+   "slug": "plate-zhenskoe-vechernee-povsednevnoe",
+   "name": "Платье женское, вечернее, повседневное",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1180,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подойдёт для вечера",
+    "На каждый день"
+   ],
+   "description": "",
+   "image": "76b85484c5",
+   "variants": [
+    {
+     "color": "Лавандовый",
+     "img": "c9d5b78bd6",
+     "sizes": {
+      "S": 22,
+      "L": 66,
+      "XL": 74
+     },
+     "sku": "SD065-01"
+    },
+    {
+     "color": "Черный",
+     "img": "32da929705",
+     "sizes": {
+      "M": 50,
+      "XL": 27
+     },
+     "sku": "SD065-02"
+    },
+    {
+     "color": "Конфетный",
+     "img": "f3abdc22be",
+     "sizes": {
+      "L": 63
+     },
+     "sku": "SD065-03"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "6b50d238ad",
+     "sizes": {
+      "L": 1
+     },
+     "sku": "SD065-04"
+    },
+    {
+     "color": "Розовый",
+     "img": "76b85484c5",
+     "sizes": {
+      "L": 10
+     },
+     "sku": "SD065-05"
+    }
+   ]
+  },
+  {
+   "id": "SD066",
+   "slug": "longsliv-v-rubchik-zhenskiy-legkiy",
+   "name": "Лонгслив в рубчик, женский, легкий",
+   "category": "longsleeves",
+   "gender": "women",
+   "price": 1100,
+   "old_price": null,
+   "material": "трикотаж в рубчик",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "6a685b9d88",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "5dff1e9883",
+     "sizes": {
+      "S": 104,
+      "L": 102,
+      "XL": 64
+     },
+     "sku": "SD066-01"
+    },
+    {
+     "color": "Белый",
+     "img": "6a685b9d88",
+     "sizes": {
+      "XL": 17
+     },
+     "sku": "SD066-02"
+    }
+   ]
+  },
+  {
+   "id": "SD067",
+   "slug": "plate-zhenskoe-barbi-povsednevnoe-s-korotkimi-rukavami",
+   "name": "Платье женское Барби, повседневное, с короткими рукавами",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1770,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Короткий рукав",
+    "На каждый день"
+   ],
+   "description": "",
+   "image": "d79d58953c",
+   "variants": [
+    {
+     "color": "Оливковый",
+     "img": "b087fbb500",
+     "sizes": {
+      "XXS": 13,
+      "XS": 6,
+      "S": 31,
+      "XL": 31
+     },
+     "sku": "SD067-01"
+    },
+    {
+     "color": "Молочный",
+     "img": "d79d58953c",
+     "sizes": {
+      "S": 13,
+      "M": 1,
+      "L": 1,
+      "XL": 16,
+      "XXL": 9
+     },
+     "sku": "SD067-02"
+    },
+    {
+     "color": "Розовый",
+     "img": "4a9fda76d5",
+     "sizes": {
+      "XS": 22,
+      "S": 1,
+      "XL": 16
+     },
+     "sku": "SD067-03"
+    },
+    {
+     "color": "Черный",
+     "img": "fcf98e078f",
+     "sizes": {
+      "S": 37,
+      "M": 10
+     },
+     "sku": "SD067-04"
+    },
+    {
+     "color": "Морской",
+     "img": "ae6517c44c",
+     "sizes": {
+      "XS": 10
+     },
+     "sku": "SD067-05"
+    },
+    {
+     "color": "Лайм",
+     "img": "a46d2d4918",
+     "sizes": {
+      "S": 44,
+      "M": 17,
+      "XL": 32
+     },
+     "sku": "SD067-06"
+    },
+    {
+     "color": "Алый",
+     "img": "84d130e006",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD067-07"
+    }
+   ]
+  },
+  {
+   "id": "SD068",
+   "slug": "futbolka-muzhskaya-2",
+   "name": "Футболка мужская",
+   "category": "tshirts",
+   "gender": "men",
+   "price": 1410,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "bbbb4a120d",
+   "variants": [
+    {
+     "color": "Серый",
+     "img": "26f7b3ceb5",
+     "sizes": {
+      "XS": 71,
+      "S": 50,
+      "M": 3,
+      "L": 57,
+      "XL": 5
+     },
+     "sku": "SD068-01"
+    },
+    {
+     "color": "Зеленый",
+     "img": "097b449585",
+     "sizes": {
+      "S": 64,
+      "M": 14,
+      "L": 16,
+      "XL": 17
+     },
+     "sku": "SD068-02"
+    }
+   ]
+  },
+  {
+   "id": "SD069",
+   "slug": "top-zhenskiy-s-korotkim-rukavom",
+   "name": "Топ женский с коротким рукавом",
+   "category": "tops",
+   "gender": "women",
+   "price": 1030,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Короткий рукав"
+   ],
+   "description": "",
+   "image": "59d50b181d",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "19d98d65a2",
+     "sizes": {
+      "S": 28,
+      "M": 19
+     },
+     "sku": "SD069-01"
+    },
+    {
+     "color": "Темно-розовый",
+     "img": "aa26aaa4c0",
+     "sizes": {
+      "L": 39,
+      "XL": 1
+     },
+     "sku": "SD069-02"
+    },
+    {
+     "color": "Зеленый хаки",
+     "img": "527fab76c9",
+     "sizes": {
+      "S": 20,
+      "M": 44,
+      "L": 45
+     },
+     "sku": "SD069-03"
+    },
+    {
+     "color": "Оливковый",
+     "img": "c6cebe5514",
+     "sizes": {
+      "M": 18
+     },
+     "sku": "SD069-04"
+    },
+    {
+     "color": "Темно-серый",
+     "img": "da46f33d97",
+     "sizes": {
+      "M": 22
+     },
+     "sku": "SD069-05"
+    },
+    {
+     "color": "Оранжевый",
+     "img": "8dd6d5b658",
+     "sizes": {
+      "M": 17
+     },
+     "sku": "SD069-06"
+    }
+   ]
+  },
+  {
+   "id": "SD070",
+   "slug": "losiny-zhenskie-utyagivayuschie",
+   "name": "Лосины женские, утягивающие",
+   "category": "pants",
+   "gender": "women",
+   "price": 1160,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Утягивающий эффект"
+   ],
+   "description": "",
+   "image": "724cdc827f",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "724cdc827f",
+     "sizes": {
+      "ONE": 217
+     },
+     "sku": "SD070-01"
+    }
+   ]
+  },
+  {
+   "id": "SD071",
+   "slug": "bryuki-zhenskie",
+   "name": "Брюки женские",
+   "category": "pants",
+   "gender": "women",
+   "price": 1880,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "30ed067c66",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "30ed067c66",
+     "sizes": {
+      "S": 59,
+      "M": 47,
+      "L": 58,
+      "XL": 23,
+      "XXL": 20
+     },
+     "sku": "SD071-01"
+    }
+   ]
+  },
+  {
+   "id": "SD072",
+   "slug": "zhenskoe-plate-mayka",
+   "name": "Женское платье-майка",
+   "category": "dresses",
+   "gender": "women",
+   "price": 2710,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "a6d482b44f",
+   "variants": [
+    {
+     "color": "Розовый",
+     "img": "dfbde8f12e",
+     "sizes": {
+      "S": 9,
+      "M": 10,
+      "L": 42,
+      "XL": 33
+     },
+     "sku": "SD072-01"
+    },
+    {
+     "color": "Бронзовый",
+     "img": "616d1cc133",
+     "sizes": {
+      "M": 4
+     },
+     "sku": "SD072-02"
+    },
+    {
+     "color": "Бордовый",
+     "img": "a6d482b44f",
+     "sizes": {
+      "M": 26
+     },
+     "sku": "SD072-03"
+    },
+    {
+     "color": "Манго",
+     "img": "c0d6168264",
+     "sizes": {
+      "S": 1
+     },
+     "sku": "SD072-04"
+    },
+    {
+     "color": "Голубой",
+     "img": "ff8b4c44ae",
+     "sizes": {
+      "S": 21,
+      "M": 21,
+      "L": 19
+     },
+     "sku": "SD072-05"
+    },
+    {
+     "color": "Белый",
+     "img": "28ed0bb8b0",
+     "sizes": {
+      "S": 20
+     },
+     "sku": "SD072-06"
+    }
+   ]
+  },
+  {
+   "id": "SD073",
+   "slug": "zhenskaya-balaklava-s-ushkami-bezhevaya",
+   "name": "Женская балаклава с ушками, бежевая",
+   "category": "hats",
+   "gender": "women",
+   "price": 1490,
+   "old_price": null,
+   "material": "",
+   "season": "Осень / зима",
+   "features": [
+    "С ушками"
+   ],
+   "description": "",
+   "image": "4b70b2a727",
+   "variants": [
+    {
+     "color": "Бежевый",
+     "img": "4b70b2a727",
+     "sizes": {
+      "ONE": 206
+     },
+     "sku": "SD073-01"
+    }
+   ]
+  },
+  {
+   "id": "SD074",
+   "slug": "vodolazka-zhenskaya-hlopok-streych",
+   "name": "Водолазка женская, хлопок, стрейч",
+   "category": "longsleeves",
+   "gender": "women",
+   "price": 1100,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [
+    "Тянется (стрейч)"
+   ],
+   "description": "",
+   "image": "cc1f6e6163",
+   "variants": [
+    {
+     "color": "Бежевый",
+     "img": "3cf78943c3",
+     "sizes": {
+      "S": 14,
+      "XXL": 1
+     },
+     "sku": "SD074-01"
+    },
+    {
+     "color": "Розовый",
+     "img": "d2a7882f37",
+     "sizes": {
+      "S": 14,
+      "M": 11,
+      "L": 2
+     },
+     "sku": "SD074-02"
+    },
+    {
+     "color": "Белый",
+     "img": "5b8366cee7",
+     "sizes": {
+      "XS": 13,
+      "S": 3,
+      "M": 12,
+      "L": 12,
+      "XL": 2
+     },
+     "sku": "SD074-03"
+    },
+    {
+     "color": "Небесно-голубой",
+     "img": "cc1f6e6163",
+     "sizes": {
+      "S": 1,
+      "M": 1
+     },
+     "sku": "SD074-04"
+    },
+    {
+     "color": "Темно-розовый",
+     "img": "0604b0c360",
+     "sizes": {
+      "L": 9
+     },
+     "sku": "SD074-05"
+    },
+    {
+     "color": "Черный",
+     "img": "b6cd503bd7",
+     "sizes": {
+      "M": 12,
+      "XL": 61
+     },
+     "sku": "SD074-06"
+    }
+   ]
+  },
+  {
+   "id": "SD075",
+   "slug": "plate-zhenskoe-barbi-povsednevnoe-s-dlinnymi-rukavami",
+   "name": "Платье женское Барби, повседневное, с длинными рукавами",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1770,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Длинный рукав",
+    "На каждый день"
+   ],
+   "description": "",
+   "image": "c443f7b632",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "c443f7b632",
+     "sizes": {
+      "XXS": 27,
+      "XS": 25,
+      "S": 20,
+      "M": 14,
+      "L": 23,
+      "XL": 13
+     },
+     "sku": "SD075-01"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "07c32dc761",
+     "sizes": {
+      "M": 29
+     },
+     "sku": "SD075-02"
+    }
+   ]
+  },
+  {
+   "id": "SD076",
+   "slug": "muzhskoe-polo-hlopok-4-tsveta",
+   "name": "Мужское поло, хлопок, 4 цвета",
+   "category": "tshirts",
+   "gender": "men",
+   "price": 1350,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "f2020669a6",
+   "variants": [
+    {
+     "color": "Лазурный",
+     "img": "5585e9789d",
+     "sizes": {
+      "M": 43,
+      "L": 38
+     },
+     "sku": "SD076-01"
+    },
+    {
+     "color": "Черный",
+     "img": "be4e97ca4b",
+     "sizes": {
+      "S": 43
+     },
+     "sku": "SD076-02"
+    }
+   ]
+  },
+  {
+   "id": "SD077",
+   "slug": "hudi-zhenskoe-oversayz-uteplennoe-s-kapyushonom",
+   "name": "Худи женское, оверсайз, утепленное, с капюшоном",
+   "category": "hoodies",
+   "gender": "women",
+   "price": 3590,
+   "old_price": null,
+   "material": "",
+   "season": "Осень / зима",
+   "features": [
+    "Свободный крой оверсайз",
+    "С капюшоном",
+    "Утеплённая модель"
+   ],
+   "description": "",
+   "image": "ebe66ccc38",
+   "variants": [
+    {
+     "color": "Индиго",
+     "img": "391d7a3dda",
+     "sizes": {
+      "S": 9
+     },
+     "sku": "SD077-01"
+    },
+    {
+     "color": "Кораллово-розовый",
+     "img": "ecf965fab4",
+     "sizes": {
+      "XS": 34,
+      "M": 1
+     },
+     "sku": "SD077-02"
+    },
+    {
+     "color": "Шоколадный",
+     "img": "ebe66ccc38",
+     "sizes": {
+      "XS": 6,
+      "S": 14,
+      "M": 1,
+      "L": 1
+     },
+     "sku": "SD077-03"
+    },
+    {
+     "color": "Оливковый",
+     "img": "6192813af0",
+     "sizes": {
+      "XS": 4,
+      "S": 5
+     },
+     "sku": "SD077-04"
+    },
+    {
+     "color": "Черный",
+     "img": "c2b653ccc8",
+     "sizes": {
+      "XS": 14,
+      "S": 6
+     },
+     "sku": "SD077-05"
+    },
+    {
+     "color": "Лавандовый",
+     "img": "bbd434f179",
+     "sizes": {
+      "S": 10,
+      "L": 2,
+      "XL": 8
+     },
+     "sku": "SD077-06"
+    },
+    {
+     "color": "Фуксия",
+     "img": "7a4ea6afac",
+     "sizes": {
+      "XS": 2
+     },
+     "sku": "SD077-07"
+    }
+   ]
+  },
+  {
+   "id": "SD078",
+   "slug": "balaklava-flisovaya-snud-sharf-flisovyy-baff",
+   "name": "Балаклава флисовая, снуд шарф флисовый, бафф",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 710,
+   "old_price": null,
+   "material": "флис",
+   "season": "Осень / зима",
+   "features": [],
+   "description": "",
+   "image": "4fd72796ba",
+   "variants": [
+    {
+     "color": "Серый",
+     "img": "4fd72796ba",
+     "sizes": {
+      "ONE": 101
+     },
+     "sku": "SD078-01"
+    }
+   ]
+  },
+  {
+   "id": "SD079",
+   "slug": "plate-zhenskoe-domashnee-sarafan-sorochka",
+   "name": "Платье женское, домашнее, сарафан, сорочка",
+   "category": "home",
+   "gender": "women",
+   "price": 1520,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Для дома и отдыха"
+   ],
+   "description": "",
+   "image": "2c73d7b529",
+   "variants": [
+    {
+     "color": "Ледяной",
+     "img": "6de1bb0f98",
+     "sizes": {
+      "XS": 1,
+      "XL": 16
+     },
+     "sku": "SD079-01"
+    },
+    {
+     "color": "Синий",
+     "img": "f6e0429a98",
+     "sizes": {
+      "L": 14
+     },
+     "sku": "SD079-02"
+    },
+    {
+     "color": "Аметистовый",
+     "img": "0722af58ce",
+     "sizes": {
+      "XL": 14
+     },
+     "sku": "SD079-03"
+    },
+    {
+     "color": "Лавандовый",
+     "img": "2c73d7b529",
+     "sizes": {
+      "XS": 15,
+      "M": 5
+     },
+     "sku": "SD079-04"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "4d47e56763",
+     "sizes": {
+      "XS": 13
+     },
+     "sku": "SD079-05"
+    }
+   ]
+  },
+  {
+   "id": "SD080",
+   "slug": "plate-zhenskoe-maksi-s-dlinnym-rukavom",
+   "name": "Платье женское макси, с длинным рукавом",
+   "category": "dresses",
+   "gender": "women",
+   "price": 2200,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Длина макси",
+    "Длинный рукав"
+   ],
+   "description": "",
+   "image": "6152888717",
+   "variants": [
+    {
+     "color": "Серый",
+     "img": "34d4e23ac5",
+     "sizes": {
+      "XS": 2,
+      "XL": 2
+     },
+     "sku": "SD080-01"
+    },
+    {
+     "color": "Розовый",
+     "img": "075810289e",
+     "sizes": {
+      "L": 11,
+      "XL": 12
+     },
+     "sku": "SD080-02"
+    },
+    {
+     "color": "Черный",
+     "img": "ba85a441e5",
+     "sizes": {
+      "XS": 19,
+      "S": 2,
+      "XXL": 3
+     },
+     "sku": "SD080-03"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "0a7e119db3",
+     "sizes": {
+      "S": 1,
+      "M": 1,
+      "XXL": 3
+     },
+     "sku": "SD080-04"
+    },
+    {
+     "color": "Оливковый",
+     "img": "e5e8b74c47",
+     "sizes": {
+      "XS": 1,
+      "XXL": 1
+     },
+     "sku": "SD080-05"
+    },
+    {
+     "color": "Зеленый",
+     "img": "6152888717",
+     "sizes": {
+      "M": 8,
+      "XL": 10
+     },
+     "sku": "SD080-06"
+    }
+   ]
+  },
+  {
+   "id": "SD081",
+   "slug": "beysbolka-uniseks-kepka-dvuhtsvetnaya-s-kantom",
+   "name": "Бейсболка унисекс, кепка двухцветная, с кантом",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 1290,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Двухцветная",
+    "С контрастным кантом"
+   ],
+   "description": "",
+   "image": "0f62f16a99",
+   "variants": [
+    {
+     "color": "Красный",
+     "img": "0f62f16a99",
+     "sizes": {
+      "ONE": 66
+     },
+     "sku": "SD081-01"
+    }
+   ]
+  },
+  {
+   "id": "SD082",
+   "slug": "futbolka-oversayz-ukorochennaya",
+   "name": "Футболка оверсайз, укороченная",
+   "category": "tshirts",
+   "gender": "women",
+   "price": 970,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Свободный крой оверсайз",
+    "Укороченная модель"
+   ],
+   "description": "",
+   "image": "e95df283d0",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "e95df283d0",
+     "sizes": {
+      "S": 20
+     },
+     "sku": "SD082-01"
+    },
+    {
+     "color": "Черный",
+     "img": "cdc88f8358",
+     "sizes": {
+      "M": 36
+     },
+     "sku": "SD082-02"
+    }
+   ]
+  },
+  {
+   "id": "SD083",
+   "slug": "sarafan-letniy-plate-zhenskoe",
+   "name": "Сарафан летний, платье женское",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1520,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Летняя модель"
+   ],
+   "description": "",
+   "image": "2f51513289",
+   "variants": [
+    {
+     "color": "Фуксия",
+     "img": "3960bea071",
+     "sizes": {
+      "XS": 3
+     },
+     "sku": "SD083-01"
+    },
+    {
+     "color": "Черный",
+     "img": "5b8236f8a3",
+     "sizes": {
+      "S": 1
+     },
+     "sku": "SD083-02"
+    },
+    {
+     "color": "Синий",
+     "img": "47ef160d91",
+     "sizes": {
+      "XS": 11
+     },
+     "sku": "SD083-03"
+    },
+    {
+     "color": "Белый",
+     "img": "2f51513289",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD083-04"
+    },
+    {
+     "color": "Лимонный",
+     "img": "12941178a2",
+     "sizes": {
+      "XS": 5
+     },
+     "sku": "SD083-05"
+    },
+    {
+     "color": "Зеленый",
+     "img": "347e8c5ffe",
+     "sizes": {
+      "S": 3,
+      "M": 8
+     },
+     "sku": "SD083-06"
+    }
+   ]
+  },
+  {
+   "id": "SD084",
+   "slug": "velosipedki-zhenskie-sportivnye",
+   "name": "Велосипедки женские, спортивные",
+   "category": "shorts",
+   "gender": "women",
+   "price": 970,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "9d0c217057",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "9d0c217057",
+     "sizes": {
+      "XS": 32
+     },
+     "sku": "SD084-01"
+    }
+   ]
+  },
+  {
+   "id": "SD085",
+   "slug": "shirokie-zhenskie-bryuki-domashnie-ili-povsednevnye",
+   "name": "Широкие женские брюки, домашние или повседневные",
+   "category": "home",
+   "gender": "women",
+   "price": 2070,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Для дома и отдыха",
+    "На каждый день"
+   ],
+   "description": "",
+   "image": "05bdbf6ec1",
+   "variants": [
+    {
+     "color": "Лавандовый",
+     "img": "05bdbf6ec1",
+     "sizes": {
+      "S": 14,
+      "M/L": 9
+     },
+     "sku": "SD085-01"
+    },
+    {
+     "color": "Ледяной",
+     "img": "f91d2648c5",
+     "sizes": {
+      "S": 1
+     },
+     "sku": "SD085-02"
+    },
+    {
+     "color": "Бирюзовый",
+     "img": "2c6f0f7b11",
+     "sizes": {
+      "S": 1
+     },
+     "sku": "SD085-03"
+    },
+    {
+     "color": "Желтый",
+     "img": "df6b6faeda",
+     "sizes": {
+      "S": 1
+     },
+     "sku": "SD085-04"
+    }
+   ]
+  },
+  {
+   "id": "SD086",
+   "slug": "plate-zhenskoe-midi-osennee-zimnee",
+   "name": "Платье женское миди осеннее, зимнее",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1770,
+   "old_price": null,
+   "material": "",
+   "season": "Осень / зима",
+   "features": [
+    "Длина миди"
+   ],
+   "description": "",
+   "image": "195916c2e8",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "6ea80952ff",
+     "sizes": {
+      "XS": 8,
+      "M": 1,
+      "L": 4
+     },
+     "sku": "SD086-01"
+    }
+   ]
+  },
+  {
+   "id": "SD087",
+   "slug": "plate-povsednevnoe-vechernee",
+   "name": "Платье повседневное, вечернее",
+   "category": "dresses",
+   "gender": "women",
+   "price": 1900,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подойдёт для вечера",
+    "На каждый день"
+   ],
+   "description": "",
+   "image": "09f5a2e551",
+   "variants": [
+    {
+     "color": "Серый меланж",
+     "img": "09f5a2e551",
+     "sizes": {
+      "S": 12
+     },
+     "sku": "SD087-01"
+    }
+   ]
+  },
+  {
+   "id": "SD088",
+   "slug": "mayka-muzhskaya-s-kapyushonom-hlopok",
+   "name": "Майка мужская, с капюшоном, хлопок",
+   "category": "tops",
+   "gender": "men",
+   "price": 1160,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [
+    "С капюшоном"
+   ],
+   "description": "",
+   "image": "2a56ea99ea",
+   "variants": [
+    {
+     "color": "Голубой",
+     "img": "a35826630a",
+     "sizes": {
+      "XS": 11
+     },
+     "sku": "SD088-01"
+    }
+   ]
+  },
+  {
+   "id": "SD089",
+   "slug": "zhenskaya-bazovaya-rubashka-oversayz",
+   "name": "Женская базовая рубашка, оверсайз",
+   "category": "longsleeves",
+   "gender": "women",
+   "price": 1900,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Свободный крой оверсайз",
+    "Базовая вещь на каждый день"
+   ],
+   "description": "",
+   "image": "62d0d01465",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "474f2bb29d",
+     "sizes": {
+      "S": 5,
+      "L": 5
+     },
+     "sku": "SD089-01"
+    }
+   ]
+  },
+  {
+   "id": "SD090",
+   "slug": "bryuki-domashnie-bezhevye",
+   "name": "Брюки домашние, бежевые",
+   "category": "home",
+   "gender": "women",
+   "price": 1490,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Для дома и отдыха"
+   ],
+   "description": "",
+   "image": "bdce18f358",
+   "variants": [
+    {
+     "color": "Розовый",
+     "img": "bdce18f358",
+     "sizes": {
+      "M": 10
+     },
+     "sku": "SD090-01"
+    }
+   ]
+  },
+  {
+   "id": "SD091",
+   "slug": "domashnie-bryuki-s-vysokoy-posadkoy-5-tsvetov",
+   "name": "Домашние брюки с высокой посадкой, 5 цветов",
+   "category": "home",
+   "gender": "women",
+   "price": 1490,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Для дома и отдыха",
+    "Высокая посадка"
+   ],
+   "description": "",
+   "image": "f9161bd502",
+   "variants": [
+    {
+     "color": "Фуксия",
+     "img": "9a08f13b15",
+     "sizes": {
+      "M": 3,
+      "L": 2
+     },
+     "sku": "SD091-01"
+    },
+    {
+     "color": "Зеленый",
+     "img": "f9161bd502",
+     "sizes": {
+      "M": 2
+     },
+     "sku": "SD091-02"
+    }
+   ]
+  },
+  {
+   "id": "SD092",
+   "slug": "bluza-zhenskaya-belaya",
+   "name": "Блуза женская, белая",
+   "category": "longsleeves",
+   "gender": "women",
+   "price": 1770,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "f6f2bca1d6",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "f6f2bca1d6",
+     "sizes": {
+      "M": 2
+     },
+     "sku": "SD092-01"
+    }
+   ]
+  },
+  {
+   "id": "SD093",
+   "slug": "kozyrek-kepka-s-reguliruemoy-zastezhkoy",
+   "name": "Козырёк-кепка с регулируемой застёжкой",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 1290,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Регулируемый размер"
+   ],
+   "description": "",
+   "image": "08780a5218",
+   "variants": [
+    {
+     "color": "Темно-синий",
+     "img": "08780a5218",
+     "sizes": {
+      "ONE": 2
+     },
+     "sku": "SD093-01"
+    }
+   ]
+  },
+  {
+   "id": "SD094",
+   "slug": "zhenskie-shorty-do-kolena-hlopkovye-letnie",
+   "name": "Женские шорты до колена, хлопковые, летние",
+   "category": "shorts",
+   "gender": "women",
+   "price": 1100,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Весна / лето",
+   "features": [
+    "Летняя модель"
+   ],
+   "description": "",
+   "image": "e71df15255",
+   "variants": [
+    {
+     "color": "Фуксия",
+     "img": "cd6d8a1536",
+     "sizes": {
+      "XS": 2,
+      "S": 1
+     },
+     "sku": "SD094-01"
+    },
+    {
+     "color": "Белый",
+     "img": "e71df15255",
+     "sizes": {
+      "S": 46,
+      "M": 5
+     },
+     "sku": "SD094-02"
+    },
+    {
+     "color": "Зеленый",
+     "img": "c1ee579d5f",
+     "sizes": {
+      "S": 4
+     },
+     "sku": "SD094-03"
+    },
+    {
+     "color": "Кораллово-розовый",
+     "img": "12424e4da6",
+     "sizes": {
+      "XS": 10
+     },
+     "sku": "SD094-04"
+    },
+    {
+     "color": "Лавандовый",
+     "img": "0e36bb6835",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD094-05"
+    }
+   ]
+  },
+  {
+   "id": "SD095",
+   "slug": "shapka-zhenskaya-19-tsvetov",
+   "name": "Шапка женская, 19 цветов",
+   "category": "hats",
+   "gender": "women",
+   "price": 640,
+   "old_price": null,
+   "material": "",
+   "season": "Осень / зима",
+   "features": [],
+   "description": "",
+   "image": "9804881796",
+   "variants": [
+    {
+     "color": "Светло-голубой",
+     "img": "3a81b7682f",
+     "sizes": {
+      "ONE": 7
+     },
+     "sku": "SD095-01"
+    },
+    {
+     "color": "Лазурный",
+     "img": "162ae293b8",
+     "sizes": {
+      "ONE": 2
+     },
+     "sku": "SD095-02"
+    },
+    {
+     "color": "Серый",
+     "img": "69a0bd0c6d",
+     "sizes": {
+      "ONE": 70
+     },
+     "sku": "SD095-03"
+    },
+    {
+     "color": "Конфетный",
+     "img": "f73f9d24ff",
+     "sizes": {
+      "ONE": 7
+     },
+     "sku": "SD095-04"
+    },
+    {
+     "color": "Коралловый",
+     "img": "b11990cda4",
+     "sizes": {
+      "ONE": 87
+     },
+     "sku": "SD095-05"
+    },
+    {
+     "color": "Голубой",
+     "img": "475d16c997",
+     "sizes": {
+      "ONE": 11
+     },
+     "sku": "SD095-06"
+    },
+    {
+     "color": "Сиреневый",
+     "img": "a489bc6e53",
+     "sizes": {
+      "ONE": 2
+     },
+     "sku": "SD095-07"
+    },
+    {
+     "color": "Темно-розовый",
+     "img": "c30ef50aa1",
+     "sizes": {
+      "ONE": 3
+     },
+     "sku": "SD095-08"
+    },
+    {
+     "color": "Зеленый",
+     "img": "aa56c78dd0",
+     "sizes": {
+      "ONE": 19
+     },
+     "sku": "SD095-09"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "82142ac1b3",
+     "sizes": {
+      "ONE": 61
+     },
+     "sku": "SD095-10"
+    },
+    {
+     "color": "Оливковый",
+     "img": "0adc85cd08",
+     "sizes": {
+      "ONE": 26
+     },
+     "sku": "SD095-11"
+    },
+    {
+     "color": "Желтый",
+     "img": "c24b71d8b7",
+     "sizes": {
+      "ONE": 12
+     },
+     "sku": "SD095-12"
+    },
+    {
+     "color": "Зеленый хаки",
+     "img": "9804881796",
+     "sizes": {
+      "ONE": 16
+     },
+     "sku": "SD095-13"
+    },
+    {
+     "color": "Карамельный",
+     "img": "101326c228",
+     "sizes": {
+      "ONE": 11
+     },
+     "sku": "SD095-14"
+    }
+   ]
+  },
+  {
+   "id": "SD096",
+   "slug": "shorty-zhenskie-sportivnye",
+   "name": "Шорты женские, спортивные",
+   "category": "shorts",
+   "gender": "women",
+   "price": 1100,
+   "old_price": null,
+   "material": "",
+   "season": "Весна / лето",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "6f7d3019f7",
+   "variants": [
+    {
+     "color": "Синий",
+     "img": "64697fad63",
+     "sizes": {
+      "XS": 5
+     },
+     "sku": "SD096-01"
+    },
+    {
+     "color": "Салатовый",
+     "img": "b6332772af",
+     "sizes": {
+      "XS": 4
+     },
+     "sku": "SD096-02"
+    },
+    {
+     "color": "Зеленый",
+     "img": "d409ab3e7d",
+     "sizes": {
+      "XXS": 2,
+      "M": 2
+     },
+     "sku": "SD096-03"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "87d6028f9d",
+     "sizes": {
+      "XXS": 4,
+      "XS": 14,
+      "S": 38,
+      "L": 9,
+      "XL": 14,
+      "XXL": 3
+     },
+     "sku": "SD096-04"
+    },
+    {
+     "color": "Мятный",
+     "img": "4398a11555",
+     "sizes": {
+      "XS": 6,
+      "S": 1
+     },
+     "sku": "SD096-05"
+    },
+    {
+     "color": "Лимонный",
+     "img": "2d1b9e5b4d",
+     "sizes": {
+      "XS": 20,
+      "M": 16
+     },
+     "sku": "SD096-06"
+    },
+    {
+     "color": "Черный",
+     "img": "71aa5c9805",
+     "sizes": {
+      "XXS": 1,
+      "XS": 97,
+      "4XL": 33
+     },
+     "sku": "SD096-07"
+    },
+    {
+     "color": "Молочный",
+     "img": "04913c68b9",
+     "sizes": {
+      "XS": 10
+     },
+     "sku": "SD096-08"
+    },
+    {
+     "color": "Серый",
+     "img": "73fee9ad4f",
+     "sizes": {
+      "XXS": 1
+     },
+     "sku": "SD096-09"
+    },
+    {
+     "color": "Лайм",
+     "img": "803ee46cd7",
+     "sizes": {
+      "XS": 3,
+      "M": 20
+     },
+     "sku": "SD096-10"
+    },
+    {
+     "color": "Вишневый",
+     "img": "28ebf82e63",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD096-11"
+    }
+   ]
+  },
+  {
+   "id": "SD097",
+   "slug": "top-zhenskiy-na-odno-plecho-hlopok",
+   "name": "Топ женский, на одно плечо, хлопок",
+   "category": "tops",
+   "gender": "women",
+   "price": 1030,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [],
+   "description": "",
+   "image": "8774ed2be1",
+   "variants": [
+    {
+     "color": "Розовый",
+     "img": "4114f289be",
+     "sizes": {
+      "XS": 21
+     },
+     "sku": "SD097-01"
+    },
+    {
+     "color": "Карамельный",
+     "img": "47ca5ac553",
+     "sizes": {
+      "L": 36
+     },
+     "sku": "SD097-02"
+    },
+    {
+     "color": "Черный",
+     "img": "b1d7d95db5",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD097-03"
+    }
+   ]
+  },
+  {
+   "id": "SD098",
+   "slug": "kapor-s-nachesom-kapyushon-s-vorotnikom",
+   "name": "Капор с начёсом, капюшон с воротником",
+   "category": "hats",
+   "gender": "women",
+   "price": 1350,
+   "old_price": null,
+   "material": "",
+   "season": "Осень / зима",
+   "features": [
+    "С капюшоном",
+    "С начёсом"
+   ],
+   "description": "",
+   "image": "32ff0ea66a",
+   "variants": [
+    {
+     "color": "Белый",
+     "img": "9067af9b5f",
+     "sizes": {
+      "ONE": 17
+     },
+     "sku": "SD098-01"
+    },
+    {
+     "color": "Горчичный",
+     "img": "2f9506b8fc",
+     "sizes": {
+      "ONE": 23
+     },
+     "sku": "SD098-02"
+    },
+    {
+     "color": "Черный",
+     "img": "32ff0ea66a",
+     "sizes": {
+      "ONE": 41
+     },
+     "sku": "SD098-03"
+    },
+    {
+     "color": "Кремовый",
+     "img": "ed4c38e45f",
+     "sizes": {
+      "ONE": 2
+     },
+     "sku": "SD098-04"
+    },
+    {
+     "color": "Мятный",
+     "img": "5ddd669ddc",
+     "sizes": {
+      "ONE": 7
+     },
+     "sku": "SD098-05"
+    }
+   ]
+  },
+  {
+   "id": "SD099",
+   "slug": "kostyum-zhenskiy-hlopkovyy-futbolka-i-shorty",
+   "name": "Костюм женский, хлопковый: футболка и шорты",
+   "category": "sets",
+   "gender": "women",
+   "price": 1620,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Весна / лето",
+   "features": [],
+   "description": "",
+   "image": "b129bf6cc9",
+   "variants": [
+    {
+     "color": "Темно-синий",
+     "img": "370724bff8",
+     "sizes": {
+      "XS": 3,
+      "M": 1,
+      "L": 1
+     },
+     "sku": "SD099-01"
+    },
+    {
+     "color": "Коралловый",
+     "img": "47cb71b287",
+     "sizes": {
+      "M": 4,
+      "L": 7
+     },
+     "sku": "SD099-02"
+    },
+    {
+     "color": "Молочный",
+     "img": "18056d30c3",
+     "sizes": {
+      "XS": 4,
+      "S": 5,
+      "M": 7,
+      "L": 3
+     },
+     "sku": "SD099-03"
+    },
+    {
+     "color": "Карамельный",
+     "img": "f92f183fe7",
+     "sizes": {
+      "L": 1
+     },
+     "sku": "SD099-04"
+    },
+    {
+     "color": "Белый",
+     "img": "596b96db13",
+     "sizes": {
+      "M": 8
+     },
+     "sku": "SD099-05"
+    },
+    {
+     "color": "Желтый",
+     "img": "d967ef8985",
+     "sizes": {
+      "S": 1
+     },
+     "sku": "SD099-06"
+    }
+   ]
+  },
+  {
+   "id": "SD100",
+   "slug": "sportivnyy-kostyum-zhenskiy-3",
+   "name": "Спортивный костюм, женский",
+   "category": "sets",
+   "gender": "women",
+   "price": 2320,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Подходит для спорта и активного отдыха"
+   ],
+   "description": "",
+   "image": "48a82ff37b",
+   "variants": [
+    {
+     "color": "Золотистый хаки",
+     "img": "48a82ff37b",
+     "sizes": {
+      "M": 14,
+      "L": 10
+     },
+     "sku": "SD100-01"
+    }
+   ]
+  },
+  {
+   "id": "SD101",
+   "slug": "sumka-shoper-hlopkovaya-shopper-cherez-plecho",
+   "name": "Сумка шопер хлопковая, шоппер через плечо",
+   "category": "bags",
+   "gender": "unisex",
+   "price": 770,
+   "old_price": null,
+   "material": "хлопок",
+   "season": "Всесезонная",
+   "features": [
+    "Носится через плечо"
+   ],
+   "description": "",
+   "image": "3af3d5bc49",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "3af3d5bc49",
+     "sizes": {
+      "ONE": 324
+     },
+     "sku": "SD101-01"
+    }
+   ]
+  },
+  {
+   "id": "SD102",
+   "slug": "zhenskaya-yubka-midi-trikotazhnaya",
+   "name": "Женская юбка миди трикотажная",
+   "category": "shorts",
+   "gender": "women",
+   "price": 2400,
+   "old_price": null,
+   "material": "трикотаж",
+   "season": "Всесезонная",
+   "features": [
+    "Длина миди"
+   ],
+   "description": "",
+   "image": "2fc9f86ad1",
+   "variants": [
+    {
+     "color": "Молочный",
+     "img": "0b9948da7e",
+     "sizes": {
+      "XS": 2
+     },
+     "sku": "SD102-01"
+    },
+    {
+     "color": "Хаки",
+     "img": "da63b58768",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD102-02"
+    },
+    {
+     "color": "Белый",
+     "img": "ce64292a54",
+     "sizes": {
+      "XL": 1
+     },
+     "sku": "SD102-03"
+    }
+   ]
+  },
+  {
+   "id": "SD103",
+   "slug": "muzhskoy-longsliv-polo-klassicheskoe-polo-dlinnyy-rukav",
+   "name": "Мужской лонгслив поло, классическое поло, длинный рукав",
+   "category": "longsleeves",
+   "gender": "men",
+   "price": 3080,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Длинный рукав"
+   ],
+   "description": "",
+   "image": "880dc5a1ff",
+   "variants": [
+    {
+     "color": "Бежевый",
+     "img": "13549493fb",
+     "sizes": {
+      "M": 18,
+      "XL": 36,
+      "XXL": 24,
+      "XXXL": 35
+     },
+     "sku": "SD103-01"
+    },
+    {
+     "color": "Белый",
+     "img": "11afb154a0",
+     "sizes": {
+      "S": 8,
+      "M": 3,
+      "L": 2
+     },
+     "sku": "SD103-02"
+    },
+    {
+     "color": "Черный",
+     "img": "880dc5a1ff",
+     "sizes": {
+      "S": 16,
+      "L": 10,
+      "XL": 11,
+      "XXL": 13,
+      "XXXL": 23
+     },
+     "sku": "SD103-03"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "229086d283",
+     "sizes": {
+      "S": 49,
+      "XL": 94,
+      "XXL": 48,
+      "4XL": 25
+     },
+     "sku": "SD103-04"
+    }
+   ]
+  },
+  {
+   "id": "SD104",
+   "slug": "zhenskoe-plate-tunika-sorochka-nochnaya-zhenskaya",
+   "name": "Женское платье, туника, сорочка ночная, женская",
+   "category": "home",
+   "gender": "women",
+   "price": 1750,
+   "old_price": null,
+   "material": "",
+   "season": "Всесезонная",
+   "features": [
+    "Для сна"
+   ],
+   "description": "",
+   "image": "2b73ebe332",
+   "variants": [
+    {
+     "color": "Черный",
+     "img": "8e3ebd4083",
+     "sizes": {
+      "XS": 10,
+      "S": 14
+     },
+     "sku": "SD104-01"
+    },
+    {
+     "color": "Серый",
+     "img": "6113dd9a83",
+     "sizes": {
+      "S": 8
+     },
+     "sku": "SD104-02"
+    },
+    {
+     "color": "Белый",
+     "img": "e89c421958",
+     "sizes": {
+      "XXS": 15,
+      "XS": 14,
+      "M": 11,
+      "L": 112,
+      "XXL": 25
+     },
+     "sku": "SD104-03"
+    },
+    {
+     "color": "Желтый",
+     "img": "1609b588a2",
+     "sizes": {
+      "XXS": 15,
+      "XS": 17,
+      "S": 15
+     },
+     "sku": "SD104-04"
+    },
+    {
+     "color": "Светло-коричневый",
+     "img": "28dbe2ed30",
+     "sizes": {
+      "XS": 18,
+      "S": 5,
+      "M": 2,
+      "L": 1,
+      "XL": 4
+     },
+     "sku": "SD104-05"
+    },
+    {
+     "color": "Темно-синий",
+     "img": "a00a7d63e5",
+     "sizes": {
+      "XS": 2
+     },
+     "sku": "SD104-06"
+    },
+    {
+     "color": "Бежевый",
+     "img": "2b73ebe332",
+     "sizes": {
+      "XXS": 1
+     },
+     "sku": "SD104-07"
+    },
+    {
+     "color": "Серебряный",
+     "img": "4cf773ad1b",
+     "sizes": {
+      "XS": 1
+     },
+     "sku": "SD104-08"
+    },
+    {
+     "color": "Мятный",
+     "img": "f20e7c3e50",
+     "sizes": {
+      "XS": 4
+     },
+     "sku": "SD104-09"
+    }
+   ]
+  },
+  {
+   "id": "SD105",
+   "slug": "kepka-dzhinsovaya-uniseks-na-metallicheskoy-zastezhke",
+   "name": "Кепка джинсовая, унисекс, на металлической застёжке",
+   "category": "hats",
+   "gender": "unisex",
+   "price": 1230,
+   "old_price": null,
+   "material": "деним",
+   "season": "Всесезонная",
+   "features": [
+    "Металлическая застёжка"
+   ],
+   "description": "",
+   "image": "ccfbb0e4af",
+   "variants": [
+    {
+     "color": "Темно-зеленый",
+     "img": "4ff61a151f",
+     "sizes": {
+      "ONE": 3
+     },
+     "sku": "SD105-01"
+    }
+   ]
+  }
+ ]
+}
