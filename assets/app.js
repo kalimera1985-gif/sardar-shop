@@ -16,8 +16,9 @@
   function sizeLabel(s, p) { return s === 'ONE' ? (p && p.g === 'kids' ? 'Детский' : 'Единый') : s; }
   function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
   var memCart = null;
-  function img(h) { return ROOT + 'images/' + h + '.webp'; }
-  function imgHQ(h) { return ROOT + 'images/hq/' + h + '.webp'; }
+  var IMGV = CFG.imgv ? '?v=' + CFG.imgv : '';
+  function img(h) { return ROOT + 'images/' + h + '.webp' + IMGV; }
+  function imgHQ(h) { return ROOT + 'images/hq/' + h + '.webp' + IMGV; }
 
   // индекс вариантов по артикулу
   var BY_SKU = {};

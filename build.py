@@ -214,6 +214,7 @@ def page(path, title, desc, body, active='', jsonld=None, og_image=None, robots=
 </html>'''
     out = OUT / path / 'index.html' if path and not path.endswith('.html') else OUT / (path or 'index.html')
     out.parent.mkdir(parents=True, exist_ok=True)
+    doc = IMG_RE.sub(r'\1?v=' + IMGV, doc)
     out.write_text(doc, encoding='utf-8')
 
 # ---------------- карточки и каталог ----------------
@@ -608,7 +609,7 @@ def build_info_pages():
 
 # ---------------- данные для JS, ИИ и поисковиков ----------------
 def build_data():
-    js = {'cfg': {k: CFG[k] for k in ('store_name', 'whatsapp', 'phone_display', 'delivery', 'payment_methods', 'order_webhook', 'currency')},
+    js = {'cfg': dict({k: CFG[k] for k in ('store_name', 'whatsapp', 'phone_display', 'delivery', 'payment_methods', 'order_webhook', 'currency')}, imgv=IMGV),
           'products': {p['id']: {'n': p['name'], 'u': p_url(p), 'p': p['price'], 'g': p['gender'],
                                  'v': [[v['sku'], v['color'], v['img'], v['sizes']] for v in p['variants']]} for p in PRODUCTS}}
     (OUT / 'assets').mkdir(parents=True, exist_ok=True)
@@ -725,6 +726,18 @@ def copy_static():
     if missing: print(f'ВНИМАНИЕ: нет {len(missing)} фото в images/: {missing[:5]}…')
 
 VER = TODAY.replace('-', '')
+
+def _images_version():
+    # метка версии фото: меняется только когда меняются сами файлы — браузеры и Cloudflare сразу берут новые фото
+    import hashlib
+    h = hashlib.md5()
+    for d in (ROOT / 'images', ROOT / 'images' / 'hq'):
+        if d.exists():
+            for f in sorted(d.glob('*.webp')):
+                h.update(f.name.encode()); h.update(f.read_bytes())
+    return h.hexdigest()[:8]
+IMGV = _images_version()
+IMG_RE = re.compile(r'(images/(?:hq/)?[0-9a-f]{10}\.webp)(?![?\w])')
 
 def main():
     if OUT.exists(): shutil.rmtree(OUT)
