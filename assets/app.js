@@ -17,6 +17,7 @@
   function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || 'null'); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
   var memCart = null;
   function img(h) { return ROOT + 'images/' + h + '.webp'; }
+  function imgHQ(h) { return ROOT + 'images/hq/' + h + '.webp'; }
 
   // индекс вариантов по артикулу
   var BY_SKU = {};
@@ -232,7 +233,7 @@
       var v = variant(sku); if (!v) return; sel.v = v;
       $$('.colors button', pdp).forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sku') === sku ? 'true' : 'false'); });
       $$('.gal-thumbs button', pdp).forEach(function (b) { b.setAttribute('aria-current', b.getAttribute('data-sku') === sku ? 'true' : 'false'); });
-      mainImg.src = img(v.img); mainImg.alt = p.n + ', цвет ' + v.color;
+      mainImg.src = imgHQ(v.img); mainImg.alt = p.n + ', цвет ' + v.color;
       colorName.textContent = v.color; skuEls.forEach(function (el) { el.textContent = v.sku; });
       var sizes = Object.keys(v.sizes);
       sizeBox.innerHTML = sizes.map(function (s) {
@@ -266,6 +267,42 @@
     var one = $('[data-buy-now]', pdp); if (one) one.onclick = function () { if (tryAdd()) location.href = ROOT + 'korzina/'; };
     pickColor(variant(startSku) && variant(startSku).p === p ? startSku : p.v[0][0]);
     window.__pdpRefresh = function () { if (sel.v) pickColor(sel.v.sku, true); };
+    // увеличение фото: по нажатию на фото — на весь экран, ещё одно нажатие — крупно с прокруткой
+    var lb, lbImg, lbBox, lbCap, lbIdx = 0;
+    function lbShow(i) {
+      lbIdx = (i + p.v.length) % p.v.length; var v = p.v[lbIdx];
+      lbBox.classList.remove('zoomed'); lbImg.src = imgHQ(v[2]); lbImg.alt = p.n + ', цвет ' + v[1];
+      lbCap.textContent = v[1] + (p.v.length > 1 ? ' · ' + (lbIdx + 1) + ' из ' + p.v.length : '');
+    }
+    function lbOpen() {
+      if (!lb) {
+        lb = document.createElement('div'); lb.className = 'lightbox'; lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-modal', 'true'); lb.setAttribute('aria-label', 'Фото товара');
+        lb.innerHTML = '<div class="lb-box"><img alt=""></div><div class="lb-bar"><span class="lb-cap"></span><span class="lb-hint">Нажмите на фото, чтобы приблизить</span></div>' +
+          (p.v.length > 1 ? '<button type="button" class="lb-nav prev" aria-label="Предыдущее фото">‹</button><button type="button" class="lb-nav next" aria-label="Следующее фото">›</button>' : '') +
+          '<button type="button" class="lb-close" aria-label="Закрыть">×</button>';
+        document.body.appendChild(lb);
+        lbBox = $('.lb-box', lb); lbImg = $('img', lb); lbCap = $('.lb-cap', lb);
+        $('.lb-close', lb).onclick = lbClose;
+        if (p.v.length > 1) { $('.prev', lb).onclick = function () { lbShow(lbIdx - 1); }; $('.next', lb).onclick = function () { lbShow(lbIdx + 1); }; }
+        lbImg.onclick = function (e) {
+          var r = lbImg.getBoundingClientRect(), fx = (e.clientX - r.left) / r.width, fy = (e.clientY - r.top) / r.height;
+          var z = lbBox.classList.toggle('zoomed');
+          if (z) requestAnimationFrame(function () { lbBox.scrollLeft = fx * lbBox.scrollWidth - lbBox.clientWidth / 2; lbBox.scrollTop = fy * lbBox.scrollHeight - lbBox.clientHeight / 2; });
+        };
+        var sx = null;
+        lbBox.addEventListener('touchstart', function (e) { sx = e.touches.length === 1 && !lbBox.classList.contains('zoomed') ? e.touches[0].clientX : null; }, { passive: true });
+        lbBox.addEventListener('touchend', function (e) { if (sx === null || p.v.length < 2) return; var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) lbShow(lbIdx + (dx < 0 ? 1 : -1)); sx = null; });
+        document.addEventListener('keydown', function (e) {
+          if (!lb.classList.contains('open')) return;
+          if (e.key === 'Escape') lbClose(); else if (e.key === 'ArrowRight') lbShow(lbIdx + 1); else if (e.key === 'ArrowLeft') lbShow(lbIdx - 1);
+        });
+      }
+      var cur = 0; p.v.forEach(function (v, i) { if (sel.v && v[0] === sel.v.sku) cur = i; });
+      lbShow(cur); lb.classList.add('open'); document.body.style.overflow = 'hidden'; $('.lb-close', lb).focus();
+    }
+    function lbClose() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+    mainImg.addEventListener('click', lbOpen);
+    $$('[data-zoom]', pdp).forEach(function (b) { b.onclick = lbOpen; });
     // липкая кнопка на мобильном
     var sb = $('.sticky-buy'), anchor = $('.buy', pdp);
     if (sb && 'IntersectionObserver' in window) {

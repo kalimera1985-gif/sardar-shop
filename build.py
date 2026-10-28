@@ -229,7 +229,7 @@ def card(p, i):
     sz = ' '.join(size_label(s, p) for s in sizes)
     old = f'<s>{money(p["old_price"])}</s>' if p.get('old_price') else ''
     return f'''<a class="card" href="{{R}}{p_url(p)}" data-id="{p['id']}" data-i="{i}" data-g="{p['gender']}" data-c="{p['category']}" data-s="{' '.join(sizes)}" data-cf="{' '.join(fams)}" data-p="{p['price']}" data-vc="{len(colors)*10+len(sizes)}" data-n="{e(search)}">
- <div class="ph"><img src="{{R}}images/{p['image']}.webp" alt="{e(p['name'])}" loading="lazy" width="268" height="360">{badge}<span class="tag">{money(p['price'])}{old}</span></div>
+ <div class="ph"><img src="{{R}}images/{p['image']}.webp" alt="{e(p['name'])}" loading="lazy" decoding="async" width="600" height="800">{badge}<span class="tag">{money(p['price'])}{old}</span></div>
  <h3>{e(p['name'])}</h3>
  <div class="meta"><span class="dots">{dots}</span><span>{e(more)}</span></div>
  <div class="sizes">{e(sz)}</div>
@@ -301,7 +301,7 @@ def product_ld(p):
     for v in p['variants']:
         for s, q in v['sizes'].items():
             variants.append({'@type': 'Product', 'sku': f"{v['sku']}-{s}", 'name': f"{p['name']}, {v['color'].lower()}, размер {size_label(s, p)}",
-                             'color': v['color'], 'size': size_label(s, p), 'image': SITE + f"images/{v['img']}.webp",
+                             'color': v['color'], 'size': size_label(s, p), 'image': SITE + f"images/hq/{v['img']}.webp",
                              'offers': {'@type': 'Offer', 'url': url + f"?c={v['sku']}", 'price': p['price'], 'priceCurrency': 'KZT',
                                         'availability': 'https://schema.org/InStock' if q > 0 else 'https://schema.org/OutOfStock',
                                         'itemCondition': 'https://schema.org/NewCondition', 'inventoryLevel': {'@type': 'QuantitativeValue', 'value': q},
@@ -309,7 +309,7 @@ def product_ld(p):
     audience = {'women': 'female', 'men': 'male', 'kids': None, 'unisex': 'unisex'}[p['gender']]
     ld = {'@context': 'https://schema.org', '@type': 'ProductGroup', 'productGroupID': p['id'], 'name': p['name'], 'url': url,
           'description': description(p), 'category': f"Одежда > {GENDERS[p['gender']][2]} > {CATS[p['category']][1]}",
-          'image': [SITE + f"images/{v['img']}.webp" for v in p['variants']][:10], 'variesBy': ['https://schema.org/color', 'https://schema.org/size'],
+          'image': [SITE + f"images/hq/{v['img']}.webp" for v in p['variants']][:10], 'variesBy': ['https://schema.org/color', 'https://schema.org/size'],
           'brand': {'@type': 'Brand', 'name': 'Без бренда'}, 'hasVariant': variants,
           'offers': {'@type': 'AggregateOffer', 'lowPrice': p['price'], 'highPrice': p['price'], 'priceCurrency': 'KZT', 'offerCount': len(variants)}}
     if audience: ld['audience'] = {'@type': 'PeopleAudience', 'suggestedGender': audience}
@@ -384,7 +384,7 @@ def build_home():
   <div class="hero-cta"><a class="btn sun" href="#catalog">Смотреть каталог</a><a class="btn alt" href="{wa_link('Здравствуйте! Хочу подобрать одежду')}" rel="noopener">Подобрать в WhatsApp</a></div>
   <ul class="facts"><li><b>{len(PRODUCTS)}</b> моделей</li><li><b>{ncol}</b> цветов</li><li><b>{total:,}</b> вещей в наличии</li></ul>
  </div>
- <div class="hero-pile" aria-hidden="true">{''.join(f'<img src="{{R}}images/{p["image"]}.webp" alt="" width="268" height="360">' for p in pile)}<span class="tag">от {money(minp)}</span></div>
+ <div class="hero-pile" aria-hidden="true">{''.join(f'<img src="{{R}}images/{p["image"]}.webp" alt="" width="600" height="800">' for p in pile)}<span class="tag">от {money(minp)}</span></div>
 </div></section>
 <section class="sect" aria-labelledby="cats-h"><div class="wrap">
  <div class="sect-head"><h2 id="cats-h">Категории</h2></div>
@@ -478,7 +478,7 @@ def build_product(p, idx):
 <nav aria-label="Навигация"><ol class="crumbs"><li><a href="{{R}}">Главная</a></li><li><a href="{{R}}katalog/">Каталог</a></li><li><a href="{{R}}katalog/{cslug}/">{e(cname)}</a></li><li aria-current="page">{e(p['name'])}</li></ol></nav>
 <article class="pdp" id="pdp" data-id="{p['id']}">
  <div class="gal">
-  <div class="gal-main"><img src="{{R}}images/{v0['img']}.webp" alt="{e(p['name'])}, цвет {e(v0['color'])}" width="268" height="360"></div>
+  <div class="gal-main"><img src="{{R}}images/hq/{v0['img']}.webp" alt="{e(p['name'])}, цвет {e(v0['color'])}" width="1200" height="1600" fetchpriority="high"><button type="button" class="zoom-btn" data-zoom aria-label="Увеличить фото"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8M10.5 7.5v6M7.5 10.5h6"/></svg>Увеличить</button></div>
   {'<div class="gal-thumbs">' + thumbs + '</div>' if len(p['variants']) > 1 else ''}
  </div>
  <div>
@@ -512,7 +512,7 @@ def build_product(p, idx):
     desc = f"{p['name']} — {money(p['price'])}. " + f"{len(p['variants'])} {plural(len(p['variants']), 'цвет', 'цвета', 'цветов')}, размеры {', '.join(size_label(s, p) for s in sizes_all)}. Доставка СДЭК по Астане 1–2 дня."
     page(url, f"{p['name']} — купить в Астане за {money(p['price'])} | {CFG['store_name']}", desc, body,
          jsonld=[product_ld(p), crumbs_ld([('Главная', ''), ('Каталог', 'katalog/'), (cname, f'katalog/{cslug}/'), (p['name'], url)])],
-         og_image=f"images/{p['image']}.webp")
+         og_image=f"images/hq/{p['image']}.webp")
 
 def build_cart():
     body = f'''<div class="wrap" id="checkout">
@@ -619,8 +619,8 @@ def build_data():
         feed.append({'id': p['id'], 'name': p['name'], 'url': SITE + p_url(p), 'price': p['price'], 'currency': 'KZT',
                      'old_price': p.get('old_price'), 'category': CATS[p['category']][1], 'gender': GENDERS[p['gender']][1],
                      'material': p.get('material') or None, 'season': p.get('season'), 'features': p.get('features', []),
-                     'description': description(p), 'in_stock_total': stock(p), 'image': SITE + f"images/{p['image']}.webp",
-                     'variants': [{'sku': v['sku'], 'color': v['color'], 'image': SITE + f"images/{v['img']}.webp",
+                     'description': description(p), 'in_stock_total': stock(p), 'image': SITE + f"images/hq/{p['image']}.webp",
+                     'variants': [{'sku': v['sku'], 'color': v['color'], 'image': SITE + f"images/hq/{v['img']}.webp",
                                    'sizes': {size_label(s, p): q for s, q in v['sizes'].items()},
                                    'url': SITE + p_url(p) + f"?c={v['sku']}"} for v in p['variants']]})
     meta = {'store': CFG['store_name'], 'seller': CFG['seller']['legal_name'], 'site': SITE, 'updated': TODAY, 'currency': 'KZT',
@@ -637,7 +637,7 @@ def build_data():
         for v in p['variants']:
             for s, q in v['sizes'].items():
                 w.writerow([f"{v['sku']}-{s}", p['id'], p['name'], v['color'], size_label(s, p), q, p['price'], CATS[p['category']][1],
-                            GENDERS[p['gender']][1], p.get('material', ''), SITE + p_url(p) + f"?c={v['sku']}", SITE + f"images/{v['img']}.webp"])
+                            GENDERS[p['gender']][1], p.get('material', ''), SITE + p_url(p) + f"?c={v['sku']}", SITE + f"images/hq/{v['img']}.webp"])
     (OUT / 'data' / 'products.csv').write_text('﻿' + buf.getvalue(), encoding='utf-8')
 
     # Google Merchant / Яндекс-совместимый RSS-фид
@@ -646,7 +646,7 @@ def build_data():
         for v in p['variants']:
             for s, q in v['sizes'].items():
                 items.append(f'''<item><g:id>{xesc(v["sku"])}-{xesc(s)}</g:id><g:item_group_id>{p["id"]}</g:item_group_id><title>{xesc(p["name"] + ", " + v["color"].lower() + ", " + size_label(s, p))}</title>
-<description>{xesc(description(p))}</description><link>{xesc(SITE + p_url(p) + "?c=" + v["sku"])}</link><g:image_link>{xesc(SITE + "images/" + v["img"] + ".webp")}</g:image_link>
+<description>{xesc(description(p))}</description><link>{xesc(SITE + p_url(p) + "?c=" + v["sku"])}</link><g:image_link>{xesc(SITE + "images/hq/" + v["img"] + ".webp")}</g:image_link>
 <g:availability>{"in_stock" if q > 0 else "out_of_stock"}</g:availability><g:price>{p["price"]} KZT</g:price><g:condition>new</g:condition><g:brand>Без бренда</g:brand><g:identifier_exists>no</g:identifier_exists>
 <g:color>{xesc(v["color"])}</g:color><g:size>{xesc(size_label(s, p))}</g:size><g:gender>{ {"women": "female", "men": "male", "kids": "unisex", "unisex": "unisex"}[p["gender"]] }</g:gender>{"<g:age_group>kids</g:age_group>" if p["gender"] == "kids" else "<g:age_group>adult</g:age_group>"}
 <g:product_type>{xesc("Одежда > " + CATS[p["category"]][1])}</g:product_type></item>''')
@@ -655,7 +655,8 @@ def build_data():
     # llms.txt — краткая карта сайта для ИИ (стандарт llmstxt.org)
     d = CFG['delivery']
     zones = '\n'.join(f"- {z['name']}: {money(z['price']) if z['price'] is not None else 'по тарифу СДЭК'}, {z['eta']}" for z in d['zones'])
-    cats = '\n'.join(f"- [{v[1]}]({SITE}katalog/{v[0]}/): {(lambda n: f"{n} {plural(n, 'модель', 'модели', 'моделей')}")(sum(1 for p in PRODUCTS if p['category'] == k))}, от {money(min(p['price'] for p in PRODUCTS if p['category'] == k))}" for k, v in CATS.items() if any(p['category'] == k for p in PRODUCTS))
+    def _models(n): return str(n) + ' ' + plural(n, 'модель', 'модели', 'моделей')
+    cats = '\n'.join(f"- [{v[1]}]({SITE}katalog/{v[0]}/): {_models(sum(1 for p in PRODUCTS if p['category'] == k))}, от {money(min(p['price'] for p in PRODUCTS if p['category'] == k))}" for k, v in CATS.items() if any(p['category'] == k for p in PRODUCTS))
     llms = f'''# {CFG['store_name']}
 
 > {CFG['tagline']} Интернет-магазин новой одежды и аксессуаров (остатки партий со склада в Астане, Казахстан). Продавец — {CFG['seller']['legal_name']}. Цены в тенге (KZT). {len(PRODUCTS)} моделей, {sum(len(p['variants']) for p in PRODUCTS)} цветовых вариантов, {sum(stock(p) for p in PRODUCTS)} шт в наличии. Данные обновлены {TODAY}.
@@ -714,8 +715,13 @@ def copy_static():
     src = ROOT / 'images'; dst = OUT / 'images'; dst.mkdir(exist_ok=True)
     need = {p['image'] for p in PRODUCTS} | {v['img'] for p in PRODUCTS for v in p['variants']}
     missing = [h for h in need if not (src / f'{h}.webp').exists()]
+    (dst / 'hq').mkdir(exist_ok=True)
     for h in need:
         if (src / f'{h}.webp').exists(): shutil.copy(src / f'{h}.webp', dst / f'{h}.webp')
+        # крупное фото для карточки товара; если его нет — используем обычное
+        hq = src / 'hq' / f'{h}.webp'
+        if hq.exists(): shutil.copy(hq, dst / 'hq' / f'{h}.webp')
+        elif (src / f'{h}.webp').exists(): shutil.copy(src / f'{h}.webp', dst / 'hq' / f'{h}.webp')
     if missing: print(f'ВНИМАНИЕ: нет {len(missing)} фото в images/: {missing[:5]}…')
 
 VER = TODAY.replace('-', '')
