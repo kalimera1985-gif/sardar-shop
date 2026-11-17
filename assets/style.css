@@ -84,6 +84,7 @@ body.has-sticky .wa-float{bottom:86px}
 .btn:active{transform:scale(.98)}
 .btn.alt{background:#fff;color:var(--ink)}
 .btn.sun{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.btn.kaspi{background:#f14635;border-color:#f14635;color:#fff}
 .btn.wa{background:#25d366;border-color:#25d366;color:#08331a}
 .btn.block{width:100%}
 .btn[disabled]{opacity:.45;cursor:not-allowed}

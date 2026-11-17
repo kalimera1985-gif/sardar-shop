@@ -151,6 +151,7 @@ def footer(r):
     cats = ''.join(f'<li><a href="{r}katalog/{v[0]}/">{v[2]}</a></li>' for k, v in list(CATS.items())[:8])
     contacts = [f'<li><a href="{wa_link()}" rel="noopener">WhatsApp: {e(CFG["phone_display"])}</a></li>',
                 f'<li><a href="tel:+{re.sub(r"[^0-9]", "", CFG["phone_display"])}">Позвонить</a></li>']
+    if CFG.get('kaspi_shop'): contacts.append(f'<li><a href="{e(CFG["kaspi_shop"])}" target="_blank" rel="noopener">Наш магазин на Kaspi.kz</a></li>')
     if CFG.get('telegram'): contacts.append(f'<li><a href="https://t.me/{e(CFG["telegram"].lstrip("@"))}" rel="noopener">Telegram</a></li>')
     if CFG.get('instagram'): contacts.append(f'<li><a href="https://instagram.com/{e(CFG["instagram"].lstrip("@"))}" rel="noopener">Instagram</a></li>')
     if CFG.get('email'): contacts.append(f'<li><a href="mailto:{e(CFG["email"])}">{e(CFG["email"])}</a></li>')
@@ -278,7 +279,8 @@ def org_ld():
             'address': {'@type': 'PostalAddress', 'addressLocality': s['city'], 'addressCountry': 'KZ', 'streetAddress': s['address']},
             'areaServed': [{'@type': 'City', 'name': z['name']} for z in CFG['delivery']['zones'] if z['id'] != 'kz'] + [{'@type': 'Country', 'name': 'Казахстан'}],
             'currenciesAccepted': 'KZT', 'paymentAccepted': ', '.join(CFG['payment_methods']),
-            'contactPoint': {'@type': 'ContactPoint', 'telephone': CFG['phone_display'], 'contactType': 'customer service', 'availableLanguage': ['ru', 'kk']}}
+            'contactPoint': {'@type': 'ContactPoint', 'telephone': CFG['phone_display'], 'contactType': 'customer service', 'availableLanguage': ['ru', 'kk']},
+            **({'sameAs': [CFG['kaspi_shop']]} if CFG.get('kaspi_shop') else {})}
 
 def shipping_ld():
     out = []
@@ -382,7 +384,7 @@ def build_home():
  <div>
   <h1>Одежда со склада в Астане</h1>
   <p class="lead">Новые футболки, платья, худи, пижамы и кепки по ценам остатков. Цена на сайте — окончательная цена вещи. Привезём курьером СДЭК по Астане и в Косшы за 1–2 дня.</p>
-  <div class="hero-cta"><a class="btn sun" href="#catalog">Смотреть каталог</a><a class="btn alt" href="{wa_link('Здравствуйте! Хочу подобрать одежду')}" rel="noopener">Подобрать в WhatsApp</a></div>
+  <div class="hero-cta"><a class="btn sun" href="#catalog">Смотреть каталог</a><a class="btn alt" href="{wa_link('Здравствуйте! Хочу подобрать одежду')}" rel="noopener">Подобрать в WhatsApp</a>{(f'<a class="btn kaspi" href="{e(CFG["kaspi_shop"])}" target="_blank" rel="noopener">Купить на Kaspi</a>') if CFG.get('kaspi_shop') else ''}</div>
   <ul class="facts"><li><b>{len(PRODUCTS)}</b> моделей</li><li><b>{ncol}</b> цветов</li><li><b>{total:,}</b> вещей в наличии</li></ul>
  </div>
  <div class="hero-pile" aria-hidden="true">{''.join(f'<img src="{{R}}images/{p["image"]}.webp" alt="" width="600" height="800">' for p in pile)}<span class="tag">от {money(minp)}</span></div>
@@ -587,9 +589,10 @@ def build_info_pages():
     body = f'''<div class="wrap prose">
 <nav aria-label="Навигация"><ol class="crumbs"><li><a href="{{R}}">Главная</a></li><li aria-current="page">Контакты</li></ol></nav>
 <h1>Контакты</h1>
-<p><a class="btn wa" href="{wa_link('Здравствуйте!')}" rel="noopener">Написать в WhatsApp</a></p>
+<p><a class="btn wa" href="{wa_link('Здравствуйте!')}" rel="noopener">Написать в WhatsApp</a>{(f' <a class="btn kaspi" href="{e(CFG["kaspi_shop"])}" target="_blank" rel="noopener">Магазин на Kaspi.kz</a>') if CFG.get('kaspi_shop') else ''}</p>
 <table class="spec">
 <tr><th>Телефон / WhatsApp</th><td>{e(CFG['phone_display'])}</td></tr>
+{f'<tr><th>Kaspi.kz</th><td><a href="{e(CFG["kaspi_shop"])}" target="_blank" rel="noopener">Наш магазин на Kaspi</a></td></tr>' if CFG.get('kaspi_shop') else ''}
 {f"<tr><th>Telegram</th><td>{e(CFG['telegram'])}</td></tr>" if CFG.get('telegram') else ''}
 {f"<tr><th>Instagram</th><td>{e(CFG['instagram'])}</td></tr>" if CFG.get('instagram') else ''}
 {f"<tr><th>E-mail</th><td>{e(CFG['email'])}</td></tr>" if CFG.get('email') else ''}
